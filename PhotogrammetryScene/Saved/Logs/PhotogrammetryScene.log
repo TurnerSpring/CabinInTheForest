@@ -1,4 +1,4 @@
-﻿Log file open, 10/02/18 11:42:44
+﻿Log file open, 10/29/18 10:55:08
 LogWindows: Failed to load 'aqProf.dll' (GetLastError=126)
 LogWindows: File 'aqProf.dll' does not exist
 LogWindows: Failed to load 'VtuneApi.dll' (GetLastError=126)
@@ -7,12 +7,12 @@ LogWindows: Failed to load 'VtuneApi32e.dll' (GetLastError=126)
 LogWindows: File 'VtuneApi32e.dll' does not exist
 LogInit: Display: Running engine for game: PhotogrammetryScene
 LogPlatformFile: Not using cached read wrapper
-LogInit: Display: RandInit(-387101481) SRandInit(-387101481).
+LogInit: Display: RandInit(1836428042) SRandInit(1836428042).
 LogInit: Read version file with build ID '3944462'
 LogInit: Overriding engine version to CL 4033788, compatible CL 3944462
 LogInit: Registered custom module enumerator with build ID '3944462'
 LogTaskGraph: Started task graph with 5 named threads and 23 total threads with 3 sets of task threads.
-LogStats: Stats thread started at 0.287645
+LogStats: Stats thread started at 0.323940
 LogD3D11RHI: Aftermath initialized
 LogICUInternationalization: Display: ICU TimeZone Detection - Raw Offset: -5:00, Platform Override: ''
 LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/2D/Paper2D/Binaries/Win64/UE4Editor-Paper2D.dll (API version 3944462).
@@ -168,7 +168,7 @@ LogPluginManager: Mounting plugin ProceduralMeshComponent
 LogPluginManager: Mounting plugin RuntimePhysXCooking
 LogPluginManager: Mounting plugin SteamVR
 LogPluginManager: Mounting plugin WindowsMoviePlayer
-LogStreaming: Display: Took  1.529s to configure plugins.
+LogStreaming: Display: Took  3.112s to configure plugins.
 LogInit: Using libcurl 7.47.1
 LogInit:  - built for x86_64-pc-win32
 LogInit:  - supports SSL with OpenSSL/1.0.2g
@@ -188,7 +188,7 @@ LogInit:  - CertBundlePath = nullptr  - Libcurl will use whatever was configured
 LogInit:  - MaxHostConnections = 16  - Libcurl will limit the number of connections to a host
 LogInit:  - LocalHostAddr = Default
 LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
-LogInit: WinSock: I am DESKTOP-ELTMNQ6 (192.168.0.24:0)
+LogInit: WinSock: I am DESKTOP-ELTMNQ6 (192.168.0.5:0)
 LogInit: Build: ++UE4+Release-4.19-CL-4033788
 LogInit: Engine Version: 4.19.2-4033788+++UE4+Release-4.19
 LogInit: Compatible Engine Version: 4.19.0-3944462+++UE4+Release-4.19
@@ -216,484 +216,934 @@ LogInit: Compiled (64-bit): Apr 27 2018 02:06:57
 LogInit: Compiled with Visual C++: 19.00.24215.01
 LogInit: Build Configuration: Development
 LogInit: Branch Name: ++UE4+Release-4.19
-LogInit: Command Line: -EpicPortal 
+LogInit: Command Line: -EpicPortal  -epicusername="Turnradicus" -epicuserid=f4e4a83dd8864da4a11b065b1b8704ea -epiclocale=en-US
 LogInit: Base Directory: C:/Users/turoc/Desktop/UE_4.19/Engine/Binaries/Win64/
 LogInit: Installed Engine Build: 1
-LogStreaming: Display: Took  0.001s to delete old logs.
+LogStreaming: Display: Took  0.004s to delete old logs.
 LogInit: Presizing for max 8388607 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
 LogInit: Object subsystem initialized
-[2018.10.02-15.42.46:863][  0]LogInit: Selected Device Profile: [Windows]
-[2018.10.02-15.42.46:863][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
-[2018.10.02-15.42.46:883][  0]LogInit: Computer: DESKTOP-ELTMNQ6
-[2018.10.02-15.42.46:884][  0]LogInit: User: turoc
-[2018.10.02-15.42.46:884][  0]LogInit: CPU Page size=4096, Cores=4
-[2018.10.02-15.42.46:884][  0]LogInit: High frequency timer resolution =2.533203 MHz
-[2018.10.02-15.42.46:884][  0]LogMemory: Memory total: Physical=15.9GB (16GB approx)
-[2018.10.02-15.42.46:884][  0]LogMemory: Platform Memory Stats for Windows
-[2018.10.02-15.42.46:884][  0]LogMemory: Process Physical Memory: 274.36 MB used, 274.36 MB peak
-[2018.10.02-15.42.46:884][  0]LogMemory: Process Virtual Memory: 264.83 MB used, 264.83 MB peak
-[2018.10.02-15.42.46:884][  0]LogMemory: Physical Memory: 7936.98 MB used,  8336.05 MB free, 16273.04 MB total
-[2018.10.02-15.42.46:884][  0]LogMemory: Virtual Memory: 4795.31 MB used,  8336.05 MB free, 134217728.00 MB total
-[2018.10.02-15.42.46:918][  0]LogInit: Using OS detected language (en-US).
-[2018.10.02-15.42.46:918][  0]LogInit: Using OS detected locale (en-CA).
-[2018.10.02-15.42.46:921][  0]LogTextLocalizationManager: No specific localization for 'en-US' exists, so the 'en' localization will be used.
-[2018.10.02-15.42.47:462][  0]LogStreaming: Display: Took  0.545s to EndInitTextLocalization.
-[2018.10.02-15.42.47:463][  0]LogInit: Setting process to per monitor DPI aware
-[2018.10.02-15.42.47:506][  0]LogSlate: New Slate User Created.  User Index 0, Is Virtual User: 0
-[2018.10.02-15.42.47:506][  0]LogSlate: Slate User Registered.  User Index 0, Is Virtual User: 0
-[2018.10.02-15.42.47:772][  0]LogD3D11RHI: D3D11 adapters:
-[2018.10.02-15.42.47:830][  0]LogD3D11RHI:    0. 'NVIDIA GeForce GTX 960M' (Feature Level 11_0)
-[2018.10.02-15.42.47:830][  0]LogD3D11RHI:       2010/0/8136 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:2, VendorId:0x10de
-[2018.10.02-15.42.47:837][  0]LogD3D11RHI:    1. 'Intel(R) HD Graphics 4600' (Feature Level 11_0)
-[2018.10.02-15.42.47:837][  0]LogD3D11RHI:       112/0/2048 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x8086
-[2018.10.02-15.42.47:839][  0]LogD3D11RHI:    2. 'Microsoft Basic Render Driver' (Feature Level 11_0)
-[2018.10.02-15.42.47:839][  0]LogD3D11RHI:       0/0/8136 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
-[2018.10.02-15.42.47:839][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
-[2018.10.02-15.42.47:860][  0]LogD3D11RHI: Creating new Direct3DDevice
-[2018.10.02-15.42.47:860][  0]LogD3D11RHI:     GPU DeviceId: 0x139b (for the marketing name, search the web for "GPU Device Id")
-[2018.10.02-15.42.47:860][  0]LogWindows: EnumDisplayDevices:
-[2018.10.02-15.42.47:860][  0]LogWindows:    0. 'Intel(R) HD Graphics 4600' (P:1 D:1)
-[2018.10.02-15.42.47:860][  0]LogWindows:    1. 'Intel(R) HD Graphics 4600' (P:0 D:1)
-[2018.10.02-15.42.47:861][  0]LogWindows:    2. 'Intel(R) HD Graphics 4600' (P:0 D:0)
-[2018.10.02-15.42.47:861][  0]LogWindows: DebugString: GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter FoundDriverCount:0 
-[2018.10.02-15.42.47:861][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce GTX 960M
-[2018.10.02-15.42.47:861][  0]LogD3D11RHI:   Driver Version: Unknown (internal:Unknown, unified:Unknown)
-[2018.10.02-15.42.47:861][  0]LogD3D11RHI:      Driver Date: Unknown
-[2018.10.02-15.42.47:861][  0]LogRHI: Texture pool is 1407 MB (70% of 2010 MB)
-[2018.10.02-15.42.47:902][  0]LogD3D11RHI: [Aftermath] Aftermath enabled and primed
-[2018.10.02-15.42.47:903][  0]LogD3D11RHI: [Aftermath] Aftermath enabled and primed
-[2018.10.02-15.42.47:903][  0]LogD3D11RHI: Async texture creation enabled
-[2018.10.02-15.42.47:921][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 2)
-[2018.10.02-15.42.47:922][  0]LogShaderCompilers: Guid format shader working directory is -15 characters bigger than the processId version (../../../../../Documents/Unreal Projects/PhotogrammetryScene/Intermediate/Shaders/WorkingDirectory/21028/).
-[2018.10.02-15.42.47:922][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/turoc/AppData/Local/Temp/UnrealShaderWorkingDir/4C98FA8740F4CFD7CB2EB092BA76BA03/'.
-[2018.10.02-15.42.48:181][  0]LogTemp: Display: Loaded TP AllDesktopTargetPlatform
-[2018.10.02-15.42.48:198][  0]LogTemp: Display: Loaded TP MacClientTargetPlatform
-[2018.10.02-15.42.48:213][  0]LogTemp: Display: Loaded TP MacNoEditorTargetPlatform
-[2018.10.02-15.42.48:230][  0]LogTemp: Display: Loaded TP MacServerTargetPlatform
-[2018.10.02-15.42.48:246][  0]LogTemp: Display: Loaded TP MacTargetPlatform
-[2018.10.02-15.42.48:262][  0]LogTemp: Display: Loaded TP WindowsClientTargetPlatform
-[2018.10.02-15.42.48:278][  0]LogTemp: Display: Loaded TP WindowsNoEditorTargetPlatform
-[2018.10.02-15.42.48:294][  0]LogTemp: Display: Loaded TP WindowsServerTargetPlatform
-[2018.10.02-15.42.48:301][  0]LogTemp: Display: Loaded TP WindowsTargetPlatform
-[2018.10.02-15.42.48:315][  0]LogTemp: Display: Loaded TP Android_ASTCTargetPlatform
-[2018.10.02-15.42.48:328][  0]LogTemp: Display: Loaded TP Android_ATCTargetPlatform
-[2018.10.02-15.42.48:340][  0]LogTemp: Display: Loaded TP Android_DXTTargetPlatform
-[2018.10.02-15.42.48:354][  0]LogTemp: Display: Loaded TP Android_ETC1aTargetPlatform
-[2018.10.02-15.42.48:367][  0]LogTemp: Display: Loaded TP Android_ETC1TargetPlatform
-[2018.10.02-15.42.48:381][  0]LogTemp: Display: Loaded TP Android_ETC2TargetPlatform
-[2018.10.02-15.42.48:407][  0]LogTemp: Display: Loaded TP Android_MultiTargetPlatform
-[2018.10.02-15.42.48:407][  0]LogTemp: Display: Loaded TP Android_PVRTCTargetPlatform
-[2018.10.02-15.42.48:422][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2018.10.02-15.42.48:423][  0]LogTemp: Display: Loaded TP HTML5TargetPlatform
-[2018.10.02-15.42.48:464][  0]LogTemp: Display: Loaded TP IOSTargetPlatform
-[2018.10.02-15.42.48:478][  0]LogTemp: Display: Loaded TP TVOSTargetPlatform
-[2018.10.02-15.42.48:499][  0]LogTemp: Display: Loaded TP LinuxClientTargetPlatform
-[2018.10.02-15.42.48:516][  0]LogTemp: Display: Loaded TP LinuxNoEditorTargetPlatform
-[2018.10.02-15.42.48:530][  0]LogTemp: Display: Loaded TP LinuxServerTargetPlatform
-[2018.10.02-15.42.48:544][  0]LogTemp: Display: Loaded TP LinuxTargetPlatform
-[2018.10.02-15.42.48:544][  0]LogTargetPlatformManager: Display: Building Assets For Windows
-[2018.10.02-15.42.48:699][  0]LogXGEController: Cannot use XGE Controller as Incredibuild is not installed on this machine.
-[2018.10.02-15.42.48:699][  0]LogShaderCompilers: Cannot use XGE Shader Compiler as Incredibuild is not installed on this machine.
-[2018.10.02-15.42.48:699][  0]LogShaderCompilers: Display: Using Local Shader Compiler.
-[2018.10.02-15.42.49:564][  0]LogDerivedDataCache: Display: Max Cache Size: 512 MB
-[2018.10.02-15.42.49:643][  0]LogDerivedDataCache: Loaded boot cache 0.08s 75MB C:/Users/turoc/AppData/Local/UnrealEngine/4.19/DerivedDataCache/Boot.ddc.
-[2018.10.02-15.42.49:643][  0]LogDerivedDataCache: Display: Loaded Boot cache: C:/Users/turoc/AppData/Local/UnrealEngine/4.19/DerivedDataCache/Boot.ddc
-[2018.10.02-15.42.49:643][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../Documents/Unreal Projects/PhotogrammetryScene/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
-[2018.10.02-15.42.49:643][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
-[2018.10.02-15.42.49:643][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../Documents/Unreal Projects/PhotogrammetryScene/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
-[2018.10.02-15.42.49:643][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
-[2018.10.02-15.42.49:661][  0]LogDerivedDataCache: Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
-[2018.10.02-15.42.49:674][  0]LogDerivedDataCache: Using Local data cache path C:/Users/turoc/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
-[2018.10.02-15.42.49:674][  0]LogDerivedDataCache: Shared data cache path not found in *engine.ini, will not use an Shared cache.
-[2018.10.02-15.42.49:674][  0]LogDerivedDataCache: Unable to find inner node Shared for hierarchical cache Hierarchy.
-[2018.10.02-15.42.49:687][  0]LogMaterial: Verifying Global Shaders for PCD3D_SM5
-[2018.10.02-15.42.49:688][  0]LogSlate: Using Freetype 2.6.0
-[2018.10.02-15.42.49:689][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
-[2018.10.02-15.42.49:689][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
-[2018.10.02-15.42.49:840][  0]LogAssetRegistry: FAssetRegistry took 0.0266 seconds to start up
-[2018.10.02-15.42.50:223][  0]LogInit: Selected Device Profile: [Windows]
-[2018.10.02-15.42.50:397][  0]LogSimplygon: Simplygon DLL not present - disabling.
-[2018.10.02-15.42.50:400][  0]LogMeshReduction: Using SimplygonSwarm for distributed automatic mesh merging
-[2018.10.02-15.42.50:400][  0]LogMeshReduction: Using QuadricMeshReduction for automatic static mesh reduction
-[2018.10.02-15.42.50:400][  0]LogMeshReduction: No automatic skeletal mesh reduction module available
-[2018.10.02-15.42.50:400][  0]LogMeshReduction: No automatic mesh merging module available
-[2018.10.02-15.42.50:400][  0]LogMeshMerging: No automatic mesh merging module available
-[2018.10.02-15.42.50:537][  0]LogNetVersion: PhotogrammetryScene , NetCL: 3944462, EngineNetVer: 2, GameNetVer: 0 (Checksum: 920732271)
-[2018.10.02-15.42.51:090][  0]LogPackageLocalizationCache: Processed 9 localized package path(s) for 2 prioritized culture(s) in 0.098525 seconds
-[2018.10.02-15.42.51:097][  0]LogUObjectArray: 36728 objects as part of root set at end of initial load.
-[2018.10.02-15.42.51:097][  0]LogUObjectAllocator: 7314312 out of 0 bytes used by permanent object pool.
-[2018.10.02-15.42.51:097][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
-[2018.10.02-15.42.53:191][  0]LogTcpMessaging: Initializing TcpMessaging bridge
-[2018.10.02-15.42.53:231][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
-[2018.10.02-15.42.53:726][  0]SourceControl: Source control is disabled
-[2018.10.02-15.42.53:726][  0]SourceControl: Source control is disabled
-[2018.10.02-15.42.53:757][  0]SourceControl: Source control is disabled
-[2018.10.02-15.42.53:786][  0]SourceControl: Source control is disabled
-[2018.10.02-15.42.54:562][  0]LogAndroidPermission: UAndroidPermissionCallbackProxy::GetInstance
-[2018.10.02-15.42.54:839][  0]LogOcInput: OculusInput pre-init called
-[2018.10.02-15.42.54:993][  0]LogEngine: Initializing Engine...
-[2018.10.02-15.42.54:995][  0]LogHMD: Failed to initialize OpenVR with code 110
-[2018.10.02-15.42.54:997][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
-[2018.10.02-15.42.54:997][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
-[2018.10.02-15.42.55:273][  0]LogAIModule: Creating AISystem for world Untitled
-[2018.10.02-15.42.55:299][  0]LogInit: XAudio2 using 'Headset Earphone (Corsair VOID PRO Wireless Gaming Headset)' : 6 channels at 48 kHz using 16 bits per sample (channel mask 0x3f)
-[2018.10.02-15.42.55:465][  0]LogInit: FAudioDevice initialized.
-[2018.10.02-15.42.55:599][  0]LogDerivedDataCache: Saved boot cache 0.13s 75MB C:/Users/turoc/AppData/Local/UnrealEngine/4.19/DerivedDataCache/Boot.ddc.
-[2018.10.02-15.42.55:624][  0]LogInit: Texture streaming: Enabled
-[2018.10.02-15.42.55:658][  0]LogEngineSessionManager: EngineSessionManager initialized
-[2018.10.02-15.42.55:694][  0]LogInit: Transaction tracking system initialized
-[2018.10.02-15.42.55:738][  0]BlueprintLog: New page: Editor Load
-[2018.10.02-15.42.55:830][  0]LocalizationService: Localization service is disabled
-[2018.10.02-15.42.55:971][  0]LogConsoleResponse: Display: 
-[2018.10.02-15.42.56:225][  0]LogCook: Display: Max memory allowance for cook 16384mb min free memory 0mb
-[2018.10.02-15.42.56:225][  0]LogCook: Display: Mobile HDR setting 1
-[2018.10.02-15.42.56:225][  0]LogGameplayTags: Display: UGameplayTagsManager::DoneAddingNativeTags. DelegateIsBound: 0
-[2018.10.02-15.42.56:225][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
-[2018.10.02-15.42.56:225][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
-[2018.10.02-15.42.56:331][  0]LogFileCache: Scanning file cache for directory 'C:/Users/turoc/Documents/Unreal Projects/PhotogrammetryScene/Content/' took 0.02s
-[2018.10.02-15.42.57:107][  0]SourceControl: Source control is disabled
-[2018.10.02-15.42.57:107][  0]Cmd: MAP LOAD FILE="../../../../../Documents/Unreal Projects/PhotogrammetryScene/Content/StarterContent/Maps/Minimal_Default.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
-[2018.10.02-15.42.57:108][  0]LightingResults: New page: Lighting Build
-[2018.10.02-15.42.57:112][  0]MapCheck: New page: Map Check
-[2018.10.02-15.42.57:112][  0]LightingResults: New page: Lighting Build
-[2018.10.02-15.43.00:589][  0]LogAIModule: Creating AISystem for world Minimal_Default
-[2018.10.02-15.43.00:656][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
-[2018.10.02-15.43.00:733][  0]Cmd: MAP CHECKDEP NOCLEARLOG
-[2018.10.02-15.43.00:816][  0]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 83.393ms to complete.
-[2018.10.02-15.43.00:816][  0]LogFileHelpers: Loading map 'Minimal_Default' took 3.709
-[2018.10.02-15.43.01:554][  0]LogCollectionManager: Loaded 0 collections in 0.002965 seconds
-[2018.10.02-15.43.01:803][  0]LogFileCache: Scanning file cache for directory 'C:/Users/turoc/Documents/Unreal Projects/PhotogrammetryScene/Saved/Collections/' took 0.01s
-[2018.10.02-15.43.01:803][  0]LogFileCache: Scanning file cache for directory 'C:/Users/turoc/Documents/Unreal Projects/PhotogrammetryScene/Content/Developers/turoc/Collections/' took 0.01s
-[2018.10.02-15.43.01:803][  0]LogFileCache: Scanning file cache for directory 'C:/Users/turoc/Documents/Unreal Projects/PhotogrammetryScene/Content/Collections/' took 0.01s
-[2018.10.02-15.43.01:803][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000000 seconds
-[2018.10.02-15.43.01:819][  0]LogContentBrowser: Native class hierarchy populated in 0.0152 seconds. Added 2452 classes and 558 folders.
-[2018.10.02-15.43.01:906][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0004 seconds. Added 0 classes and 0 folders.
-[2018.10.02-15.43.03:072][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0003 seconds. Added 0 classes and 0 folders.
-[2018.10.02-15.43.03:097][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0005 seconds. Added 1 classes and 2 folders.
-[2018.10.02-15.43.03:641][  0]LogSlate: Took 0.000535 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
-[2018.10.02-15.43.03:648][  0]LogSlate: Took 0.000610 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Bold.ttf' (160K)
-[2018.10.02-15.43.03:682][  0]LogSlate: Took 0.014247 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/FontAwesome.ttf' (139K)
-[2018.10.02-15.43.03:888][  0]LogRenderer: Reallocating scene render targets to support 848x412 Format 10 NumSamples 1 (Frame:1).
-[2018.10.02-15.43.04:164][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0004 seconds. Added 0 classes and 0 folders.
-[2018.10.02-15.43.04:164][  0]LogLoad: (Engine Initialization) Total time: 20.91 seconds
-[2018.10.02-15.43.04:164][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.00 seconds
-[2018.10.02-15.43.04:182][  0]LogWindowsTextInputMethodSystem: Display: IME system now deactivated.
-[2018.10.02-15.43.04:203][  0]LogContentStreaming: Texture pool size now 1000 MB
-[2018.10.02-15.43.04:326][  0]LogSlate: Took 0.010212 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
-[2018.10.02-15.43.04:425][  2]LogAssetRegistry: Asset discovery search completed in 14.6076 seconds
-[2018.10.02-15.43.04:430][  2]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000000 seconds (found 0 objects)
-[2018.10.02-15.43.04:430][  2]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000123 seconds (updated 0 objects)
-[2018.10.02-15.43.04:460][  3]LogStaticMesh: Allocated 351x64x64 distance field atlas = 2.7Mb, with 44 objects containing 2.0Mb backing data
-[2018.10.02-15.47.12:331][ 13]LogSlate: FSceneViewport::OnFocusLost() reason 0
-[2018.10.02-15.47.12:613][ 21]LogSlate: Window 'PhotogrammetryScene - Unreal Editor' being destroyed
-[2018.10.02-15.47.12:613][ 21]LogWindowsTextInputMethodSystem: Display: IME system now deactivated.
-[2018.10.02-15.47.13:399][ 22]Cmd: QUIT_EDITOR
-[2018.10.02-15.47.13:490][ 22]LogSlate: Slate User Destroyed.  User Index 0, Is Virtual User: 0
-[2018.10.02-15.47.13:490][ 22]LogExit: Preparing to exit.
-[2018.10.02-15.47.14:540][ 22]LogDirectoryWatcher: A directory notification for 'C:/Users/turoc/Documents/Unreal Projects/PhotogrammetryScene/Content/' was aborted.
-[2018.10.02-15.47.14:572][ 22]LogExit: Editor shut down
-[2018.10.02-15.47.14:577][ 22]LogExit: Transaction tracking system shut down
-[2018.10.02-15.47.14:732][ 22]LogDirectoryWatcher: A directory notification for '../../../Engine/Content/' was aborted.
-[2018.10.02-15.47.14:732][ 22]LogDirectoryWatcher: A directory notification for '../../../../../Documents/Unreal Projects/PhotogrammetryScene/Content/' was aborted.
-[2018.10.02-15.47.14:732][ 22]LogDirectoryWatcher: A directory notification for '../../Plugins/2D/Paper2D/Content/' was aborted.
-[2018.10.02-15.47.14:732][ 22]LogDirectoryWatcher: A directory notification for '../../Plugins/Enterprise/DatasmithContent/Content/' was aborted.
-[2018.10.02-15.47.14:732][ 22]LogDirectoryWatcher: A directory notification for '../../Plugins/Media/MediaCompositing/Content/' was aborted.
-[2018.10.02-15.47.14:732][ 22]LogDirectoryWatcher: A directory notification for '../../Plugins/Runtime/AppleARKit/Content/' was aborted.
-[2018.10.02-15.47.14:732][ 22]LogDirectoryWatcher: A directory notification for '../../Plugins/Runtime/Oculus/OculusVR/Content/' was aborted.
-[2018.10.02-15.47.14:732][ 22]LogDirectoryWatcher: A directory notification for '../../Plugins/Runtime/Steam/SteamVR/Content/' was aborted.
-[2018.10.02-15.47.14:797][ 22]LogExit: Object subsystem successfully closed.
-[2018.10.02-15.47.14:815][ 22]LogShaderCompilers: Display: Shaders left to compile 0
-[2018.10.02-15.47.14:819][ 22]LogD3D11RHI: Shutdown
-[2018.10.02-15.47.14:819][ 22]LogD3D11RHI: CleanupD3DDevice
-[2018.10.02-15.47.14:821][ 22]LogD3D11RHI: ~FD3D11DynamicRHI
-[2018.10.02-15.47.14:850][ 22]LogModuleManager: Shutting down and abandoning module HierarchicalLODOutliner (574)
-[2018.10.02-15.47.14:850][ 22]LogModuleManager: Shutting down and abandoning module SceneOutliner (572)
-[2018.10.02-15.47.14:860][ 22]LogModuleManager: Shutting down and abandoning module AddContentDialog (570)
-[2018.10.02-15.47.14:860][ 22]LogDirectoryWatcher: A directory notification for 'C:/Users/turoc/Desktop/UE_4.19/FeaturePacks/' was aborted.
-[2018.10.02-15.47.14:861][ 22]LogModuleManager: Shutting down and abandoning module WidgetCarousel (569)
-[2018.10.02-15.47.14:861][ 22]LogModuleManager: Shutting down and abandoning module EditorWidgets (566)
-[2018.10.02-15.47.14:861][ 22]LogModuleManager: Shutting down and abandoning module CollectionManager (564)
-[2018.10.02-15.47.14:861][ 22]LogDirectoryWatcher: A directory notification for 'C:/Users/turoc/Documents/Unreal Projects/PhotogrammetryScene/Content/Collections/' was aborted.
-[2018.10.02-15.47.14:861][ 22]LogDirectoryWatcher: A directory notification for 'C:/Users/turoc/Documents/Unreal Projects/PhotogrammetryScene/Content/Developers/turoc/Collections/' was aborted.
-[2018.10.02-15.47.14:861][ 22]LogDirectoryWatcher: A directory notification for 'C:/Users/turoc/Documents/Unreal Projects/PhotogrammetryScene/Saved/Collections/' was aborted.
-[2018.10.02-15.47.14:861][ 22]LogModuleManager: Shutting down and abandoning module StatsViewer (562)
-[2018.10.02-15.47.14:861][ 22]LogModuleManager: Shutting down and abandoning module FoliageEdit (560)
-[2018.10.02-15.47.14:861][ 22]LogModuleManager: Shutting down and abandoning module LandscapeEditor (558)
-[2018.10.02-15.47.14:862][ 22]LogModuleManager: Shutting down and abandoning module MeshPaintMode (556)
-[2018.10.02-15.47.14:862][ 22]LogModuleManager: Shutting down and abandoning module SceneDepthPickerMode (554)
-[2018.10.02-15.47.14:862][ 22]LogModuleManager: Shutting down and abandoning module ActorPickerMode (552)
-[2018.10.02-15.47.14:862][ 22]LogModuleManager: Shutting down and abandoning module GeometryMode (550)
-[2018.10.02-15.47.14:862][ 22]LogModuleManager: Shutting down and abandoning module TextureAlignMode (548)
-[2018.10.02-15.47.14:862][ 22]LogModuleManager: Shutting down and abandoning module BspMode (546)
-[2018.10.02-15.47.14:862][ 22]LogModuleManager: Shutting down and abandoning module PIEPreviewDeviceProfileSelector (544)
-[2018.10.02-15.47.14:862][ 22]LogModuleManager: Shutting down and abandoning module HardwareSurvey (542)
-[2018.10.02-15.47.14:862][ 22]LogModuleManager: Shutting down and abandoning module SequenceRecorderSections (540)
-[2018.10.02-15.47.14:862][ 22]LogModuleManager: Shutting down and abandoning module AutomationWorker (538)
-[2018.10.02-15.47.14:862][ 22]LogModuleManager: Shutting down and abandoning module AudioCaptureEditor (536)
-[2018.10.02-15.47.14:862][ 22]LogModuleManager: Shutting down and abandoning module SequenceRecorder (535)
-[2018.10.02-15.47.14:862][ 22]LogModuleManager: Shutting down and abandoning module MatineeToLevelSequence (532)
-[2018.10.02-15.47.14:862][ 22]LogModuleManager: Shutting down and abandoning module LevelSequenceEditor (530)
-[2018.10.02-15.47.14:862][ 22]LogModuleManager: Shutting down and abandoning module PlacementMode (529)
-[2018.10.02-15.47.14:862][ 22]LogModuleManager: Shutting down and abandoning module MaterialEditor (528)
-[2018.10.02-15.47.14:862][ 22]LogModuleManager: Shutting down and abandoning module WmfMediaFactory (524)
-[2018.10.02-15.47.14:862][ 22]LogModuleManager: Shutting down and abandoning module WmfMediaEditor (522)
-[2018.10.02-15.47.14:862][ 22]LogModuleManager: Shutting down and abandoning module MediaPlayerEditor (520)
-[2018.10.02-15.47.14:862][ 22]LogModuleManager: Shutting down and abandoning module OpenExrWrapper (518)
-[2018.10.02-15.47.14:862][ 22]LogModuleManager: Shutting down and abandoning module ImgMediaFactory (516)
-[2018.10.02-15.47.14:862][ 22]LogModuleManager: Shutting down and abandoning module ImgMediaEditor (514)
-[2018.10.02-15.47.14:862][ 22]LogModuleManager: Shutting down and abandoning module AvfMediaFactory (512)
-[2018.10.02-15.47.14:862][ 22]LogModuleManager: Shutting down and abandoning module AvfMediaEditor (510)
-[2018.10.02-15.47.14:862][ 22]LogModuleManager: Shutting down and abandoning module AndroidMediaFactory (508)
-[2018.10.02-15.47.14:862][ 22]LogModuleManager: Shutting down and abandoning module AndroidMediaEditor (506)
-[2018.10.02-15.47.14:862][ 22]LogModuleManager: Shutting down and abandoning module CharacterAI (504)
-[2018.10.02-15.47.14:862][ 22]LogModuleManager: Shutting down and abandoning module SmartSnapping (502)
-[2018.10.02-15.47.14:863][ 22]LogModuleManager: Shutting down and abandoning module SessionServices (500)
-[2018.10.02-15.47.14:863][ 22]LogModuleManager: Shutting down and abandoning module ViewportSnapping (498)
-[2018.10.02-15.47.14:863][ 22]LogModuleManager: Shutting down and abandoning module ViewportInteraction (496)
-[2018.10.02-15.47.14:863][ 22]LogModuleManager: Shutting down and abandoning module ClothPainter (494)
-[2018.10.02-15.47.14:863][ 22]LogModuleManager: Shutting down and abandoning module SkeletalMeshEditor (493)
-[2018.10.02-15.47.14:863][ 22]LogModuleManager: Shutting down and abandoning module LogVisualizer (490)
-[2018.10.02-15.47.14:863][ 22]LogModuleManager: Shutting down and abandoning module IntroTutorials (488)
-[2018.10.02-15.47.14:863][ 22]LogModuleManager: Shutting down and abandoning module GameProjectGeneration (487)
-[2018.10.02-15.47.14:863][ 22]LogModuleManager: Shutting down and abandoning module IOSPlatformEditor (484)
-[2018.10.02-15.47.14:863][ 22]LogModuleManager: Shutting down and abandoning module HTML5PlatformEditor (482)
-[2018.10.02-15.47.14:863][ 22]LogModuleManager: Shutting down and abandoning module AndroidPlatformEditor (480)
-[2018.10.02-15.47.14:863][ 22]LogModuleManager: Shutting down and abandoning module AndroidDeviceDetection (479)
-[2018.10.02-15.47.15:050][ 22]LogModuleManager: Shutting down and abandoning module WindowsPlatformEditor (476)
-[2018.10.02-15.47.15:050][ 22]LogModuleManager: Shutting down and abandoning module IOSRuntimeSettings (474)
-[2018.10.02-15.47.15:050][ 22]LogModuleManager: Shutting down and abandoning module AndroidRuntimeSettings (472)
-[2018.10.02-15.47.15:050][ 22]LogModuleManager: Shutting down and abandoning module InputBindingEditor (470)
-[2018.10.02-15.47.15:050][ 22]LogModuleManager: Shutting down and abandoning module MergeActors (468)
-[2018.10.02-15.47.15:050][ 22]LogModuleManager: Shutting down and abandoning module LocalizationDashboard (466)
-[2018.10.02-15.47.15:050][ 22]LogModuleManager: Shutting down and abandoning module LocalizationService (465)
-[2018.10.02-15.47.15:050][ 22]LogModuleManager: Shutting down and abandoning module HardwareTargeting (462)
-[2018.10.02-15.47.15:051][ 22]LogModuleManager: Shutting down and abandoning module DeviceProfileEditor (460)
-[2018.10.02-15.47.15:051][ 22]LogModuleManager: Shutting down and abandoning module UndoHistory (458)
-[2018.10.02-15.47.15:051][ 22]LogModuleManager: Shutting down and abandoning module XmlParser (456)
-[2018.10.02-15.47.15:051][ 22]LogModuleManager: Shutting down and abandoning module Blutility (454)
-[2018.10.02-15.47.15:051][ 22]LogModuleManager: Shutting down and abandoning module ProjectSettingsViewer (452)
-[2018.10.02-15.47.15:051][ 22]LogModuleManager: Shutting down and abandoning module ProjectTargetPlatformEditor (451)
-[2018.10.02-15.47.15:051][ 22]LogModuleManager: Shutting down and abandoning module EditorSettingsViewer (448)
-[2018.10.02-15.47.15:051][ 22]LogModuleManager: Shutting down and abandoning module SettingsEditor (446)
-[2018.10.02-15.47.15:051][ 22]LogModuleManager: Shutting down and abandoning module ProjectLauncher (444)
-[2018.10.02-15.47.15:051][ 22]LogModuleManager: Shutting down and abandoning module SessionFrontend (442)
-[2018.10.02-15.47.15:051][ 22]LogModuleManager: Shutting down and abandoning module ProfilerClient (440)
-[2018.10.02-15.47.15:051][ 22]LogModuleManager: Shutting down and abandoning module DeviceManager (438)
-[2018.10.02-15.47.15:051][ 22]LogModuleManager: Shutting down and abandoning module TargetDeviceServices (437)
-[2018.10.02-15.47.15:106][ 22]LogModuleManager: Shutting down and abandoning module AutomationController (434)
-[2018.10.02-15.47.15:106][ 22]LogModuleManager: Shutting down and abandoning module AutomationWindow (432)
-[2018.10.02-15.47.15:106][ 22]LogModuleManager: Shutting down and abandoning module Layers (430)
-[2018.10.02-15.47.15:106][ 22]LogModuleManager: Shutting down and abandoning module ComponentVisualizers (428)
-[2018.10.02-15.47.15:106][ 22]LogModuleManager: Shutting down and abandoning module DetailCustomizations (426)
-[2018.10.02-15.47.15:106][ 22]LogModuleManager: Shutting down and abandoning module PackagesDialog (424)
-[2018.10.02-15.47.15:106][ 22]LogModuleManager: Shutting down and abandoning module Persona (422)
-[2018.10.02-15.47.15:106][ 22]LogModuleManager: Shutting down and abandoning module AdvancedPreviewScene (421)
-[2018.10.02-15.47.15:106][ 22]LogModuleManager: Shutting down and abandoning module AnimGraph (419)
-[2018.10.02-15.47.15:106][ 22]LogModuleManager: Shutting down and abandoning module Kismet (416)
-[2018.10.02-15.47.15:106][ 22]LogModuleManager: Shutting down and abandoning module GraphEditor (414)
-[2018.10.02-15.47.15:106][ 22]LogModuleManager: Shutting down and abandoning module ClassViewer (412)
-[2018.10.02-15.47.15:106][ 22]LogModuleManager: Shutting down and abandoning module Toolbox (410)
-[2018.10.02-15.47.15:106][ 22]LogModuleManager: Shutting down and abandoning module ModuleUI (408)
-[2018.10.02-15.47.15:106][ 22]LogModuleManager: Shutting down and abandoning module MovieSceneTools (406)
-[2018.10.02-15.47.15:106][ 22]LogModuleManager: Shutting down and abandoning module OutputLog (404)
-[2018.10.02-15.47.15:106][ 22]LogModuleManager: Shutting down and abandoning module GammaUI (402)
-[2018.10.02-15.47.15:106][ 22]LogModuleManager: Shutting down and abandoning module Documentation (400)
-[2018.10.02-15.47.15:106][ 22]LogModuleManager: Shutting down and abandoning module MovieSceneTracks (398)
-[2018.10.02-15.47.15:106][ 22]LogModuleManager: Shutting down and abandoning module MovieScene (396)
-[2018.10.02-15.47.15:106][ 22]LogModuleManager: Shutting down and abandoning module StreamingPauseRendering (394)
-[2018.10.02-15.47.15:107][ 22]LogModuleManager: Shutting down and abandoning module LauncherPlatform (392)
-[2018.10.02-15.47.15:107][ 22]LogModuleManager: Shutting down and abandoning module AnalyticsET (390)
-[2018.10.02-15.47.15:107][ 22]LogModuleManager: Shutting down and abandoning module PortalServices (388)
-[2018.10.02-15.47.15:107][ 22]LogModuleManager: Shutting down and abandoning module PortalRpc (386)
-[2018.10.02-15.47.15:107][ 22]LogModuleManager: Shutting down and abandoning module MessagingRpc (384)
-[2018.10.02-15.47.15:107][ 22]LogModuleManager: Shutting down and abandoning module AIModule (382)
-[2018.10.02-15.47.15:107][ 22]LogModuleManager: Shutting down and abandoning module GameplayDebugger (381)
-[2018.10.02-15.47.15:107][ 22]LogModuleManager: Shutting down and abandoning module AITestSuite (379)
-[2018.10.02-15.47.15:107][ 22]LogModuleManager: Shutting down and abandoning module DesktopPlatform (376)
-[2018.10.02-15.47.15:107][ 22]LogModuleManager: Shutting down and abandoning module ProfilerService (374)
-[2018.10.02-15.47.15:286][ 22]LogModuleManager: Shutting down and abandoning module TaskGraph (372)
-[2018.10.02-15.47.15:286][ 22]LogModuleManager: Shutting down and abandoning module SteamVRController (370)
-[2018.10.02-15.47.15:286][ 22]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponentEditor (368)
-[2018.10.02-15.47.15:286][ 22]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponent (366)
-[2018.10.02-15.47.15:286][ 22]LogModuleManager: Shutting down and abandoning module OculusInput (364)
-[2018.10.02-15.47.15:286][ 22]LogModuleManager: Shutting down and abandoning module MobilePatchingUtils (362)
-[2018.10.02-15.47.15:286][ 22]LogModuleManager: Shutting down and abandoning module CustomMeshComponent (360)
-[2018.10.02-15.47.15:286][ 22]LogModuleManager: Shutting down and abandoning module CableComponent (358)
-[2018.10.02-15.47.15:286][ 22]LogModuleManager: Shutting down and abandoning module AudioCapture (356)
-[2018.10.02-15.47.15:286][ 22]LogModuleManager: Shutting down and abandoning module ArchVisCharacter (354)
-[2018.10.02-15.47.15:286][ 22]LogModuleManager: Shutting down and abandoning module AndroidPermission (352)
-[2018.10.02-15.47.15:286][ 22]LogModuleManager: Shutting down and abandoning module NUTUnrealEngine4 (348)
-[2018.10.02-15.47.15:286][ 22]LogModuleManager: Shutting down and abandoning module NetcodeUnitTest (346)
-[2018.10.02-15.47.15:287][ 22]LogModuleManager: Shutting down and abandoning module MediaCompositingEditor (344)
-[2018.10.02-15.47.15:287][ 22]LogModuleManager: Shutting down and abandoning module MediaCompositing (342)
-[2018.10.02-15.47.15:287][ 22]LogModuleManager: Shutting down and abandoning module LinearTimecode (340)
-[2018.10.02-15.47.15:287][ 22]LogModuleManager: Shutting down and abandoning module ImgMedia (338)
-[2018.10.02-15.47.15:289][ 22]LogModuleManager: Shutting down and abandoning module HTML5Networking (336)
-[2018.10.02-15.47.15:289][ 22]LogModuleManager: Shutting down and abandoning module AlembicImporter (334)
-[2018.10.02-15.47.15:289][ 22]LogModuleManager: Shutting down and abandoning module AlembicLibrary (333)
-[2018.10.02-15.47.15:290][ 22]LogModuleManager: Shutting down and abandoning module GeometryCache (332)
-[2018.10.02-15.47.15:290][ 22]LogModuleManager: Shutting down and abandoning module GeometryCacheEd (331)
-[2018.10.02-15.47.15:290][ 22]LogModuleManager: Shutting down and abandoning module DatasmithContent (326)
-[2018.10.02-15.47.15:290][ 22]LogModuleManager: Shutting down and abandoning module SpeedTreeImporter (324)
-[2018.10.02-15.47.15:290][ 22]LogModuleManager: Shutting down and abandoning module PluginBrowser (322)
-[2018.10.02-15.47.15:290][ 22]LogModuleManager: Shutting down and abandoning module MobileLauncherProfileWizard (320)
-[2018.10.02-15.47.15:290][ 22]LogModuleManager: Shutting down and abandoning module CryptoKeysOpenSSL (318)
-[2018.10.02-15.47.15:290][ 22]LogModuleManager: Shutting down and abandoning module CryptoKeys (316)
-[2018.10.02-15.47.15:290][ 22]LogModuleManager: Shutting down and abandoning module VisualStudioSourceCodeAccess (314)
-[2018.10.02-15.47.15:290][ 22]LogModuleManager: Shutting down and abandoning module VisualStudioCodeSourceCodeAccess (312)
-[2018.10.02-15.47.15:290][ 22]LogModuleManager: Shutting down and abandoning module UObjectPlugin (310)
-[2018.10.02-15.47.15:290][ 22]LogModuleManager: Shutting down and abandoning module SubversionSourceControl (308)
-[2018.10.02-15.47.15:290][ 22]LogModuleManager: Shutting down and abandoning module PerforceSourceControl (306)
-[2018.10.02-15.47.15:290][ 22]LogModuleManager: Shutting down and abandoning module GitSourceControl (304)
-[2018.10.02-15.47.15:290][ 22]LogModuleManager: Shutting down and abandoning module SourceControl (303)
-[2018.10.02-15.47.15:290][ 22]LogModuleManager: Shutting down and abandoning module CLionSourceCodeAccess (300)
-[2018.10.02-15.47.15:290][ 22]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeEditor (298)
-[2018.10.02-15.47.15:290][ 22]LogModuleManager: Shutting down and abandoning module PaperTiledImporter (296)
-[2018.10.02-15.47.15:290][ 22]LogModuleManager: Shutting down and abandoning module PaperSpriteSheetImporter (294)
-[2018.10.02-15.47.15:290][ 22]LogModuleManager: Shutting down and abandoning module Paper2DEditor (292)
-[2018.10.02-15.47.15:290][ 22]LogModuleManager: Shutting down and abandoning module MeshPaint (291)
-[2018.10.02-15.47.15:290][ 22]LogModuleManager: Shutting down and abandoning module RuntimePhysXCooking (288)
-[2018.10.02-15.47.15:290][ 22]LogModuleManager: Shutting down and abandoning module PhysXVehiclesEditor (286)
-[2018.10.02-15.47.15:290][ 22]LogModuleManager: Shutting down and abandoning module PhysXVehicles (284)
-[2018.10.02-15.47.15:290][ 22]LogModuleManager: Shutting down and abandoning module OculusEditor (282)
-[2018.10.02-15.47.15:290][ 22]LogModuleManager: Shutting down and abandoning module LocationServicesBPLibrary (280)
-[2018.10.02-15.47.15:290][ 22]LogModuleManager: Shutting down and abandoning module ImmediatePhysicsEditor (278)
-[2018.10.02-15.47.15:290][ 22]LogModuleManager: Shutting down and abandoning module ImmediatePhysics (276)
-[2018.10.02-15.47.15:290][ 22]LogModuleManager: Shutting down and abandoning module ActorSequence (274)
-[2018.10.02-15.47.15:290][ 22]LogModuleManager: Shutting down and abandoning module UdpMessaging (272)
-[2018.10.02-15.47.15:391][ 22]LogModuleManager: Shutting down and abandoning module TcpMessaging (270)
-[2018.10.02-15.47.15:492][ 22]LogModuleManager: Shutting down and abandoning module GameplayTagsEditor (268)
-[2018.10.02-15.47.15:492][ 22]LogModuleManager: Shutting down and abandoning module FacialAnimationEditor (266)
-[2018.10.02-15.47.15:492][ 22]LogModuleManager: Shutting down and abandoning module FacialAnimation (264)
-[2018.10.02-15.47.15:492][ 22]LogModuleManager: Shutting down and abandoning module DataValidation (262)
-[2018.10.02-15.47.15:492][ 22]LogModuleManager: Shutting down and abandoning module AssetManagerEditor (260)
-[2018.10.02-15.47.15:492][ 22]LogModuleManager: Shutting down and abandoning module LevelEditor (259)
-[2018.10.02-15.47.15:493][ 22]LogModuleManager: Shutting down and abandoning module PixelInspectorModule (258)
-[2018.10.02-15.47.15:493][ 22]LogModuleManager: Shutting down and abandoning module CommonMenuExtensions (256)
-[2018.10.02-15.47.15:493][ 22]LogModuleManager: Shutting down and abandoning module MainFrame (254)
-[2018.10.02-15.47.15:494][ 22]LogModuleManager: Shutting down and abandoning module HotReload (253)
-[2018.10.02-15.47.15:494][ 22]LogModuleManager: Shutting down and abandoning module ContentBrowser (249)
-[2018.10.02-15.47.15:495][ 22]LogModuleManager: Shutting down and abandoning module TreeMap (247)
-[2018.10.02-15.47.15:495][ 22]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeRuntime (244)
-[2018.10.02-15.47.15:495][ 22]LogModuleManager: Shutting down and abandoning module LiveLinkEditor (242)
-[2018.10.02-15.47.15:495][ 22]LogModuleManager: Shutting down and abandoning module LiveLink (240)
-[2018.10.02-15.47.15:783][ 22]LogModuleManager: Shutting down and abandoning module Paper2D (238)
-[2018.10.02-15.47.15:783][ 22]LogModuleManager: Shutting down and abandoning module WindowsMoviePlayer (236)
-[2018.10.02-15.47.15:783][ 22]LogModuleManager: Shutting down and abandoning module WmfMedia (234)
-[2018.10.02-15.47.15:785][ 22]LogModuleManager: Shutting down and abandoning module Media (233)
-[2018.10.02-15.47.15:791][ 22]LogModuleManager: Shutting down and abandoning module PacketHandler (230)
-[2018.10.02-15.47.15:791][ 22]LogModuleManager: Shutting down and abandoning module ClothingSystemEditor (228)
-[2018.10.02-15.47.15:792][ 22]LogModuleManager: Shutting down and abandoning module ClothingSystemRuntime (226)
-[2018.10.02-15.47.15:792][ 22]LogModuleManager: Shutting down and abandoning module MediaAssets (224)
-[2018.10.02-15.47.15:792][ 22]LogModuleManager: Shutting down and abandoning module Overlay (222)
-[2018.10.02-15.47.15:792][ 22]LogModuleManager: Shutting down and abandoning module OverlayEditor (221)
-[2018.10.02-15.47.15:792][ 22]LogModuleManager: Shutting down and abandoning module VREditor (218)
-[2018.10.02-15.47.15:792][ 22]LogModuleManager: Shutting down and abandoning module StringTableEditor (216)
-[2018.10.02-15.47.15:792][ 22]LogModuleManager: Shutting down and abandoning module GameplayTasksEditor (214)
-[2018.10.02-15.47.15:792][ 22]LogModuleManager: Shutting down and abandoning module BehaviorTreeEditor (212)
-[2018.10.02-15.47.15:792][ 22]LogModuleManager: Shutting down and abandoning module FunctionalTesting (210)
-[2018.10.02-15.47.15:792][ 22]LogModuleManager: Shutting down and abandoning module CollisionAnalyzer (208)
-[2018.10.02-15.47.15:792][ 22]LogModuleManager: Shutting down and abandoning module WorkspaceMenuStructure (207)
-[2018.10.02-15.47.15:792][ 22]LogModuleManager: Shutting down and abandoning module UMG (204)
-[2018.10.02-15.47.15:792][ 22]LogModuleManager: Shutting down and abandoning module UMGEditor (203)
-[2018.10.02-15.47.15:792][ 22]LogModuleManager: Shutting down and abandoning module Sequencer (202)
-[2018.10.02-15.47.15:792][ 22]LogModuleManager: Shutting down and abandoning module MessageLog (199)
-[2018.10.02-15.47.15:792][ 22]LogModuleManager: Shutting down and abandoning module SlateReflector (194)
-[2018.10.02-15.47.15:792][ 22]LogModuleManager: Shutting down and abandoning module Slate (192)
-[2018.10.02-15.47.15:792][ 22]LogModuleManager: Shutting down and abandoning module EditorStyle (190)
-[2018.10.02-15.47.15:794][ 22]LogModuleManager: Shutting down and abandoning module MRMesh (188)
-[2018.10.02-15.47.15:794][ 22]LogModuleManager: Shutting down and abandoning module SourceCodeAccess (186)
-[2018.10.02-15.47.15:794][ 22]LogModuleManager: Shutting down and abandoning module HeadMountedDisplay (184)
-[2018.10.02-15.47.15:794][ 22]LogModuleManager: Shutting down and abandoning module XAudio2 (182)
-[2018.10.02-15.47.15:795][ 22]LogModuleManager: Shutting down and abandoning module Networking (180)
-[2018.10.02-15.47.15:795][ 22]LogModuleManager: Shutting down and abandoning module Core (178)
-[2018.10.02-15.47.15:795][ 22]LogModuleManager: Shutting down and abandoning module LevelSequence (176)
-[2018.10.02-15.47.15:795][ 22]LogModuleManager: Shutting down and abandoning module KismetCompiler (174)
-[2018.10.02-15.47.15:795][ 22]LogModuleManager: Shutting down and abandoning module MeshUtilities (172)
-[2018.10.02-15.47.15:795][ 22]LogModuleManager: Shutting down and abandoning module MeshMergeUtilities (171)
-[2018.10.02-15.47.15:795][ 22]LogModuleManager: Shutting down and abandoning module MeshReductionInterface (170)
-[2018.10.02-15.47.15:795][ 22]LogModuleManager: Shutting down and abandoning module SimplygonSwarm (169)
-[2018.10.02-15.47.15:795][ 22]LogModuleManager: Shutting down and abandoning module SimplygonMeshReduction (167)
-[2018.10.02-15.47.15:795][ 22]LogModuleManager: Shutting down and abandoning module QuadricMeshReduction (165)
-[2018.10.02-15.47.15:795][ 22]LogModuleManager: Shutting down and abandoning module MaterialBaking (161)
-[2018.10.02-15.47.15:795][ 22]LogModuleManager: Shutting down and abandoning module DirectoryWatcher (157)
-[2018.10.02-15.47.15:796][ 22]LogModuleManager: Shutting down and abandoning module DerivedDataCache (154)
-[2018.10.02-15.47.15:802][ 22]LogDerivedDataCache: Shutdown
-[2018.10.02-15.47.15:802][ 22]LogModuleManager: Shutting down and abandoning module XGEController (152)
-[2018.10.02-15.47.15:802][ 22]LogModuleManager: Shutting down and abandoning module TargetPlatform (150)
-[2018.10.02-15.47.15:802][ 22]LogModuleManager: Shutting down and abandoning module VulkanShaderFormat (149)
-[2018.10.02-15.47.15:802][ 22]LogModuleManager: Shutting down and abandoning module ShaderFormatVectorVM (147)
-[2018.10.02-15.47.15:802][ 22]LogModuleManager: Shutting down and abandoning module ShaderFormatOpenGL (145)
-[2018.10.02-15.47.15:802][ 22]LogModuleManager: Shutting down and abandoning module ShaderFormatD3D (143)
-[2018.10.02-15.47.15:802][ 22]LogModuleManager: Shutting down and abandoning module MetalShaderFormat (141)
-[2018.10.02-15.47.15:802][ 22]LogModuleManager: Shutting down and abandoning module TextureFormatUncompressed (139)
-[2018.10.02-15.47.15:802][ 22]LogModuleManager: Shutting down and abandoning module TextureFormatPVR (137)
-[2018.10.02-15.47.15:802][ 22]LogModuleManager: Shutting down and abandoning module TextureFormatDXT (135)
-[2018.10.02-15.47.15:802][ 22]LogModuleManager: Shutting down and abandoning module TextureFormatIntelISPCTexComp (133)
-[2018.10.02-15.47.15:803][ 22]LogModuleManager: Shutting down and abandoning module TextureFormatASTC (131)
-[2018.10.02-15.47.15:803][ 22]LogModuleManager: Shutting down and abandoning module ImageWrapper (130)
-[2018.10.02-15.47.15:803][ 22]LogModuleManager: Shutting down and abandoning module TextureFormatAndroid (127)
-[2018.10.02-15.47.15:803][ 22]LogModuleManager: Shutting down and abandoning module AudioFormatOpus (125)
-[2018.10.02-15.47.15:803][ 22]LogModuleManager: Shutting down and abandoning module AudioFormatOgg (123)
-[2018.10.02-15.47.15:803][ 22]LogModuleManager: Shutting down and abandoning module AudioFormatADPCM (121)
-[2018.10.02-15.47.15:803][ 22]LogModuleManager: Shutting down and abandoning module LinuxTargetPlatform (119)
-[2018.10.02-15.47.15:803][ 22]LogModuleManager: Shutting down and abandoning module LinuxServerTargetPlatform (117)
-[2018.10.02-15.47.15:803][ 22]LogModuleManager: Shutting down and abandoning module LinuxNoEditorTargetPlatform (115)
-[2018.10.02-15.47.15:803][ 22]LogModuleManager: Shutting down and abandoning module LinuxClientTargetPlatform (113)
-[2018.10.02-15.47.15:803][ 22]LogModuleManager: Shutting down and abandoning module TVOSTargetPlatform (111)
-[2018.10.02-15.47.15:803][ 22]LogModuleManager: Shutting down and abandoning module Messaging (109)
-[2018.10.02-15.47.15:803][ 22]LogModuleManager: Shutting down and abandoning module IOSTargetPlatform (107)
-[2018.10.02-15.47.15:803][ 22]LogModuleManager: Shutting down and abandoning module HTML5TargetPlatform (105)
-[2018.10.02-15.47.15:803][ 22]LogModuleManager: Shutting down and abandoning module AndroidTargetPlatform (103)
-[2018.10.02-15.47.15:803][ 22]LogModuleManager: Shutting down and abandoning module Android_PVRTCTargetPlatform (101)
-[2018.10.02-15.47.15:803][ 22]LogModuleManager: Shutting down and abandoning module Android_MultiTargetPlatform (99)
-[2018.10.02-15.47.15:803][ 22]LogModuleManager: Shutting down and abandoning module Android_ETC2TargetPlatform (97)
-[2018.10.02-15.47.15:803][ 22]LogModuleManager: Shutting down and abandoning module Android_ETC1TargetPlatform (95)
-[2018.10.02-15.47.15:803][ 22]LogModuleManager: Shutting down and abandoning module Android_ETC1aTargetPlatform (93)
-[2018.10.02-15.47.15:803][ 22]LogModuleManager: Shutting down and abandoning module Android_DXTTargetPlatform (91)
-[2018.10.02-15.47.15:803][ 22]LogModuleManager: Shutting down and abandoning module Android_ATCTargetPlatform (89)
-[2018.10.02-15.47.15:803][ 22]LogModuleManager: Shutting down and abandoning module Android_ASTCTargetPlatform (87)
-[2018.10.02-15.47.15:803][ 22]LogModuleManager: Shutting down and abandoning module WindowsTargetPlatform (85)
-[2018.10.02-15.47.15:803][ 22]LogModuleManager: Shutting down and abandoning module WindowsServerTargetPlatform (83)
-[2018.10.02-15.47.15:803][ 22]LogModuleManager: Shutting down and abandoning module WindowsNoEditorTargetPlatform (81)
-[2018.10.02-15.47.15:803][ 22]LogModuleManager: Shutting down and abandoning module WindowsClientTargetPlatform (79)
-[2018.10.02-15.47.15:803][ 22]LogModuleManager: Shutting down and abandoning module MacTargetPlatform (77)
-[2018.10.02-15.47.15:803][ 22]LogModuleManager: Shutting down and abandoning module MacServerTargetPlatform (75)
-[2018.10.02-15.47.15:803][ 22]LogModuleManager: Shutting down and abandoning module MacNoEditorTargetPlatform (73)
-[2018.10.02-15.47.15:803][ 22]LogModuleManager: Shutting down and abandoning module MacClientTargetPlatform (71)
-[2018.10.02-15.47.15:803][ 22]LogModuleManager: Shutting down and abandoning module AllDesktopTargetPlatform (69)
-[2018.10.02-15.47.15:803][ 22]LogModuleManager: Shutting down and abandoning module InputCore (66)
-[2018.10.02-15.47.15:803][ 22]LogModuleManager: Shutting down and abandoning module Settings (64)
-[2018.10.02-15.47.15:803][ 22]LogModuleManager: Shutting down and abandoning module PhysXCooking (62)
-[2018.10.02-15.47.15:803][ 22]LogModuleManager: Shutting down and abandoning module SteamVR (60)
-[2018.10.02-15.47.15:803][ 22]LogModuleManager: Shutting down and abandoning module OculusHMD (58)
-[2018.10.02-15.47.15:803][ 22]LogModuleManager: Shutting down and abandoning module ExampleDeviceProfileSelector (56)
-[2018.10.02-15.47.15:803][ 22]LogModuleManager: Shutting down and abandoning module AppleARKit (54)
-[2018.10.02-15.47.15:803][ 22]LogModuleManager: Shutting down and abandoning module AugmentedReality (51)
-[2018.10.02-15.47.15:803][ 22]LogModuleManager: Shutting down and abandoning module OnlineBlueprintSupport (48)
-[2018.10.02-15.47.15:803][ 22]LogModuleManager: Shutting down and abandoning module OnlineSubsystem (44)
-[2018.10.02-15.47.15:803][ 22]LogModuleManager: Shutting down and abandoning module XMPP (43)
-[2018.10.02-15.47.15:803][ 22]LogModuleManager: Shutting down and abandoning module HTTP (41)
-[2018.10.02-15.47.15:803][ 22]LogHttp: Display: Http module shutting down, but needs to wait on 1 outstanding Http requests:
-[2018.10.02-15.47.15:803][ 22]LogHttp: Display: 	verb=[POST] url=[https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B778CB477-4B67-5A46-01E6-54A47A8D7F9D%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.19.2-4033788%2B%2B%2BUE4%2BRelease-4.19&UserID=e35f4c8245728a6ff26cc793be86cd8b%7Cf4e4a83dd8864da4a11b065b1b8704ea%7C289c7a6c-1920-4e48-bba4-141839b2474f&AppEnvironment=datacollector-binary&UploadType=eteventstream] status=Processing
-[2018.10.02-15.47.15:829][ 22]LogModuleManager: Shutting down and abandoning module SSL (40)
-[2018.10.02-15.47.15:830][ 22]LogModuleManager: Shutting down and abandoning module AnimationModifiers (36)
-[2018.10.02-15.47.15:831][ 22]LogModuleManager: Shutting down and abandoning module PropertyEditor (35)
-[2018.10.02-15.47.15:831][ 22]LogModuleManager: Shutting down and abandoning module AudioEditor (32)
-[2018.10.02-15.47.15:831][ 22]LogModuleManager: Shutting down and abandoning module TextureCompressor (30)
-[2018.10.02-15.47.15:831][ 22]LogModuleManager: Shutting down and abandoning module ShaderCore (28)
-[2018.10.02-15.47.15:831][ 22]LogModuleManager: Shutting down and abandoning module Landscape (26)
-[2018.10.02-15.47.15:831][ 22]LogModuleManager: Shutting down and abandoning module SlateRHIRenderer (24)
-[2018.10.02-15.47.15:831][ 22]LogModuleManager: Shutting down and abandoning module OpenGLDrv (22)
-[2018.10.02-15.47.15:831][ 22]LogModuleManager: Shutting down and abandoning module D3D11RHI (20)
-[2018.10.02-15.47.15:831][ 22]LogModuleManager: Shutting down and abandoning module AnimGraphRuntime (18)
-[2018.10.02-15.47.15:831][ 22]LogModuleManager: Shutting down and abandoning module Renderer (16)
-[2018.10.02-15.47.15:831][ 22]LogModuleManager: Shutting down and abandoning module Engine (14)
-[2018.10.02-15.47.15:831][ 22]LogModuleManager: Shutting down and abandoning module CoreUObject (12)
-[2018.10.02-15.47.15:831][ 22]LogModuleManager: Shutting down and abandoning module NetworkFile (10)
-[2018.10.02-15.47.15:831][ 22]LogModuleManager: Shutting down and abandoning module CookedIterativeFile (8)
-[2018.10.02-15.47.15:831][ 22]LogModuleManager: Shutting down and abandoning module StreamingFile (6)
-[2018.10.02-15.47.15:831][ 22]LogModuleManager: Shutting down and abandoning module SandboxFile (4)
-[2018.10.02-15.47.15:832][ 22]LogModuleManager: Shutting down and abandoning module PakFile (2)
-[2018.10.02-15.47.15:837][ 22]LogExit: Exiting.
-[2018.10.02-15.47.15:846][ 22]Log file closed, 10/02/18 11:47:15
+[2018.10.29-14.55.12:339][  0]LogInit: Selected Device Profile: [Windows]
+[2018.10.29-14.55.12:339][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2018.10.29-14.55.12:411][  0]LogInit: Computer: DESKTOP-ELTMNQ6
+[2018.10.29-14.55.12:411][  0]LogInit: User: turoc
+[2018.10.29-14.55.12:411][  0]LogInit: CPU Page size=4096, Cores=4
+[2018.10.29-14.55.12:411][  0]LogInit: High frequency timer resolution =2.533210 MHz
+[2018.10.29-14.55.12:412][  0]LogMemory: Memory total: Physical=15.9GB (16GB approx)
+[2018.10.29-14.55.12:412][  0]LogMemory: Platform Memory Stats for Windows
+[2018.10.29-14.55.12:412][  0]LogMemory: Process Physical Memory: 274.23 MB used, 274.23 MB peak
+[2018.10.29-14.55.12:412][  0]LogMemory: Process Virtual Memory: 264.82 MB used, 264.82 MB peak
+[2018.10.29-14.55.12:412][  0]LogMemory: Physical Memory: 6867.34 MB used,  9405.69 MB free, 16273.04 MB total
+[2018.10.29-14.55.12:412][  0]LogMemory: Virtual Memory: 4795.31 MB used,  9405.69 MB free, 134217728.00 MB total
+[2018.10.29-14.55.12:467][  0]LogInit: Using OS detected language (en-US).
+[2018.10.29-14.55.12:467][  0]LogInit: Using OS detected locale (en-CA).
+[2018.10.29-14.55.12:473][  0]LogTextLocalizationManager: No specific localization for 'en-US' exists, so the 'en' localization will be used.
+[2018.10.29-14.55.12:976][  0]LogStreaming: Display: Took  0.509s to EndInitTextLocalization.
+[2018.10.29-14.55.12:977][  0]LogInit: Setting process to per monitor DPI aware
+[2018.10.29-14.55.13:026][  0]LogSlate: New Slate User Created.  User Index 0, Is Virtual User: 0
+[2018.10.29-14.55.13:026][  0]LogSlate: Slate User Registered.  User Index 0, Is Virtual User: 0
+[2018.10.29-14.55.13:391][  0]LogD3D11RHI: D3D11 adapters:
+[2018.10.29-14.55.13:478][  0]LogD3D11RHI:    0. 'NVIDIA GeForce GTX 960M' (Feature Level 11_0)
+[2018.10.29-14.55.13:478][  0]LogD3D11RHI:       2010/0/8136 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:2, VendorId:0x10de
+[2018.10.29-14.55.13:486][  0]LogD3D11RHI:    1. 'Intel(R) HD Graphics 4600' (Feature Level 11_0)
+[2018.10.29-14.55.13:486][  0]LogD3D11RHI:       112/0/2048 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x8086
+[2018.10.29-14.55.13:491][  0]LogD3D11RHI:    2. 'Microsoft Basic Render Driver' (Feature Level 11_0)
+[2018.10.29-14.55.13:491][  0]LogD3D11RHI:       0/0/8136 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
+[2018.10.29-14.55.13:491][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2018.10.29-14.55.13:524][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2018.10.29-14.55.13:524][  0]LogD3D11RHI:     GPU DeviceId: 0x139b (for the marketing name, search the web for "GPU Device Id")
+[2018.10.29-14.55.13:524][  0]LogWindows: EnumDisplayDevices:
+[2018.10.29-14.55.13:525][  0]LogWindows:    0. 'Intel(R) HD Graphics 4600' (P:1 D:1)
+[2018.10.29-14.55.13:525][  0]LogWindows:    1. 'Intel(R) HD Graphics 4600' (P:0 D:1)
+[2018.10.29-14.55.13:525][  0]LogWindows:    2. 'Intel(R) HD Graphics 4600' (P:0 D:0)
+[2018.10.29-14.55.13:526][  0]LogWindows: DebugString: GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter FoundDriverCount:0 
+[2018.10.29-14.55.13:526][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce GTX 960M
+[2018.10.29-14.55.13:526][  0]LogD3D11RHI:   Driver Version: Unknown (internal:Unknown, unified:Unknown)
+[2018.10.29-14.55.13:526][  0]LogD3D11RHI:      Driver Date: Unknown
+[2018.10.29-14.55.13:526][  0]LogRHI: Texture pool is 1407 MB (70% of 2010 MB)
+[2018.10.29-14.55.13:596][  0]LogD3D11RHI: [Aftermath] Aftermath enabled and primed
+[2018.10.29-14.55.13:596][  0]LogD3D11RHI: [Aftermath] Aftermath enabled and primed
+[2018.10.29-14.55.13:596][  0]LogD3D11RHI: Async texture creation enabled
+[2018.10.29-14.55.13:617][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 2)
+[2018.10.29-14.55.13:619][  0]LogShaderCompilers: Guid format shader working directory is -23 characters bigger than the processId version (../../../../../Documents/GitHub/CabinInTheForest/PhotogrammetryScene/Intermediate/Shaders/WorkingDirectory/14736/).
+[2018.10.29-14.55.13:619][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/turoc/AppData/Local/Temp/UnrealShaderWorkingDir/3C0CDF294738131BCC10888C1CD93D21/'.
+[2018.10.29-14.55.14:184][  0]LogTemp: Display: Loaded TP AllDesktopTargetPlatform
+[2018.10.29-14.55.14:205][  0]LogTemp: Display: Loaded TP MacClientTargetPlatform
+[2018.10.29-14.55.14:225][  0]LogTemp: Display: Loaded TP MacNoEditorTargetPlatform
+[2018.10.29-14.55.14:244][  0]LogTemp: Display: Loaded TP MacServerTargetPlatform
+[2018.10.29-14.55.14:265][  0]LogTemp: Display: Loaded TP MacTargetPlatform
+[2018.10.29-14.55.14:284][  0]LogTemp: Display: Loaded TP WindowsClientTargetPlatform
+[2018.10.29-14.55.14:304][  0]LogTemp: Display: Loaded TP WindowsNoEditorTargetPlatform
+[2018.10.29-14.55.14:323][  0]LogTemp: Display: Loaded TP WindowsServerTargetPlatform
+[2018.10.29-14.55.14:335][  0]LogTemp: Display: Loaded TP WindowsTargetPlatform
+[2018.10.29-14.55.14:350][  0]LogTemp: Display: Loaded TP Android_ASTCTargetPlatform
+[2018.10.29-14.55.14:364][  0]LogTemp: Display: Loaded TP Android_ATCTargetPlatform
+[2018.10.29-14.55.14:380][  0]LogTemp: Display: Loaded TP Android_DXTTargetPlatform
+[2018.10.29-14.55.14:394][  0]LogTemp: Display: Loaded TP Android_ETC1aTargetPlatform
+[2018.10.29-14.55.14:410][  0]LogTemp: Display: Loaded TP Android_ETC1TargetPlatform
+[2018.10.29-14.55.14:428][  0]LogTemp: Display: Loaded TP Android_ETC2TargetPlatform
+[2018.10.29-14.55.14:460][  0]LogTemp: Display: Loaded TP Android_MultiTargetPlatform
+[2018.10.29-14.55.14:460][  0]LogTemp: Display: Loaded TP Android_PVRTCTargetPlatform
+[2018.10.29-14.55.14:476][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2018.10.29-14.55.14:478][  0]LogTemp: Display: Loaded TP HTML5TargetPlatform
+[2018.10.29-14.55.14:523][  0]LogTemp: Display: Loaded TP IOSTargetPlatform
+[2018.10.29-14.55.14:537][  0]LogTemp: Display: Loaded TP TVOSTargetPlatform
+[2018.10.29-14.55.14:552][  0]LogTemp: Display: Loaded TP LinuxClientTargetPlatform
+[2018.10.29-14.55.14:572][  0]LogTemp: Display: Loaded TP LinuxNoEditorTargetPlatform
+[2018.10.29-14.55.14:588][  0]LogTemp: Display: Loaded TP LinuxServerTargetPlatform
+[2018.10.29-14.55.14:604][  0]LogTemp: Display: Loaded TP LinuxTargetPlatform
+[2018.10.29-14.55.14:604][  0]LogTargetPlatformManager: Display: Building Assets For Windows
+[2018.10.29-14.55.14:887][  0]LogXGEController: Cannot use XGE Controller as Incredibuild is not installed on this machine.
+[2018.10.29-14.55.14:887][  0]LogShaderCompilers: Cannot use XGE Shader Compiler as Incredibuild is not installed on this machine.
+[2018.10.29-14.55.14:887][  0]LogShaderCompilers: Display: Using Local Shader Compiler.
+[2018.10.29-14.55.16:281][  0]LogDerivedDataCache: Display: Max Cache Size: 512 MB
+[2018.10.29-14.55.16:412][  0]LogDerivedDataCache: Loaded boot cache 0.13s 75MB C:/Users/turoc/AppData/Local/UnrealEngine/4.19/DerivedDataCache/Boot.ddc.
+[2018.10.29-14.55.16:412][  0]LogDerivedDataCache: Display: Loaded Boot cache: C:/Users/turoc/AppData/Local/UnrealEngine/4.19/DerivedDataCache/Boot.ddc
+[2018.10.29-14.55.16:412][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../Documents/GitHub/CabinInTheForest/PhotogrammetryScene/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2018.10.29-14.55.16:412][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2018.10.29-14.55.16:412][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../Documents/GitHub/CabinInTheForest/PhotogrammetryScene/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2018.10.29-14.55.16:412][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2018.10.29-14.55.16:431][  0]LogDerivedDataCache: Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2018.10.29-14.55.16:445][  0]LogDerivedDataCache: Using Local data cache path C:/Users/turoc/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2018.10.29-14.55.16:445][  0]LogDerivedDataCache: Shared data cache path not found in *engine.ini, will not use an Shared cache.
+[2018.10.29-14.55.16:445][  0]LogDerivedDataCache: Unable to find inner node Shared for hierarchical cache Hierarchy.
+[2018.10.29-14.55.16:459][  0]LogMaterial: Verifying Global Shaders for PCD3D_SM5
+[2018.10.29-14.55.16:460][  0]LogSlate: Using Freetype 2.6.0
+[2018.10.29-14.55.16:507][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2018.10.29-14.55.16:507][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2018.10.29-14.55.18:504][  0]LogAssetRegistry: FAssetRegistry took 0.0276 seconds to start up
+[2018.10.29-14.55.18:936][  0]LogInit: Selected Device Profile: [Windows]
+[2018.10.29-14.55.19:076][  0]LogSimplygon: Simplygon DLL not present - disabling.
+[2018.10.29-14.55.19:082][  0]LogMeshReduction: Using SimplygonSwarm for distributed automatic mesh merging
+[2018.10.29-14.55.19:082][  0]LogMeshReduction: Using QuadricMeshReduction for automatic static mesh reduction
+[2018.10.29-14.55.19:082][  0]LogMeshReduction: No automatic skeletal mesh reduction module available
+[2018.10.29-14.55.19:082][  0]LogMeshReduction: No automatic mesh merging module available
+[2018.10.29-14.55.19:082][  0]LogMeshMerging: No automatic mesh merging module available
+[2018.10.29-14.55.19:332][  0]LogNetVersion: PhotogrammetryScene , NetCL: 3944462, EngineNetVer: 2, GameNetVer: 0 (Checksum: 920732271)
+[2018.10.29-14.55.20:098][  0]LogPackageLocalizationCache: Processed 9 localized package path(s) for 2 prioritized culture(s) in 0.238220 seconds
+[2018.10.29-14.55.20:106][  0]LogUObjectArray: 36728 objects as part of root set at end of initial load.
+[2018.10.29-14.55.20:107][  0]LogUObjectAllocator: 7314312 out of 0 bytes used by permanent object pool.
+[2018.10.29-14.55.20:107][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2018.10.29-14.55.22:727][  0]LogTcpMessaging: Initializing TcpMessaging bridge
+[2018.10.29-14.55.22:789][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2018.10.29-14.55.23:614][  0]SourceControl: Source control is disabled
+[2018.10.29-14.55.23:614][  0]SourceControl: Source control is disabled
+[2018.10.29-14.55.23:667][  0]SourceControl: Source control is disabled
+[2018.10.29-14.55.23:717][  0]SourceControl: Source control is disabled
+[2018.10.29-14.55.24:848][  0]LogAndroidPermission: UAndroidPermissionCallbackProxy::GetInstance
+[2018.10.29-14.55.25:320][  0]LogOcInput: OculusInput pre-init called
+[2018.10.29-14.55.25:548][  0]LogEngine: Initializing Engine...
+[2018.10.29-14.55.25:550][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2018.10.29-14.55.25:552][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
+[2018.10.29-14.55.25:552][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
+[2018.10.29-14.55.25:841][  0]LogAIModule: Creating AISystem for world Untitled
+[2018.10.29-14.55.25:886][  0]LogInit: XAudio2 using 'Headset Earphone (2- Corsair VOID PRO Wireless Gaming Headset)' : 6 channels at 48 kHz using 16 bits per sample (channel mask 0x3f)
+[2018.10.29-14.55.26:154][  0]LogInit: FAudioDevice initialized.
+[2018.10.29-14.55.27:768][  0]LogDerivedDataCache: Saved boot cache 1.61s 75MB C:/Users/turoc/AppData/Local/UnrealEngine/4.19/DerivedDataCache/Boot.ddc.
+[2018.10.29-14.55.28:117][  0]LogInit: Texture streaming: Enabled
+[2018.10.29-14.55.28:172][  0]LogEngineSessionManager: EngineSessionManager initialized
+[2018.10.29-14.55.28:438][  0]LogInit: Transaction tracking system initialized
+[2018.10.29-14.55.28:513][  0]BlueprintLog: New page: Editor Load
+[2018.10.29-14.55.28:672][  0]LocalizationService: Localization service is disabled
+[2018.10.29-14.55.28:959][  0]LogConsoleResponse: Display: 
+[2018.10.29-14.55.29:476][  0]LogCook: Display: Max memory allowance for cook 16384mb min free memory 0mb
+[2018.10.29-14.55.29:476][  0]LogCook: Display: Mobile HDR setting 1
+[2018.10.29-14.55.29:476][  0]LogGameplayTags: Display: UGameplayTagsManager::DoneAddingNativeTags. DelegateIsBound: 0
+[2018.10.29-14.55.29:476][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
+[2018.10.29-14.55.29:476][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
+[2018.10.29-14.55.32:527][  0]LogFileCache: Scanning file cache for directory 'C:/Users/turoc/Documents/GitHub/CabinInTheForest/PhotogrammetryScene/Content/' took 0.07s
+[2018.10.29-14.55.32:731][  0]SourceControl: Source control is disabled
+[2018.10.29-14.55.32:731][  0]Cmd: MAP LOAD FILE="../../../../../Documents/GitHub/CabinInTheForest/PhotogrammetryScene/Content/StarterContent/Maps/Minimal_Default.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2018.10.29-14.55.32:736][  0]LightingResults: New page: Lighting Build
+[2018.10.29-14.55.32:743][  0]MapCheck: New page: Map Check
+[2018.10.29-14.55.32:743][  0]LightingResults: New page: Lighting Build
+[2018.10.29-14.55.39:128][  0]LogMaterial: Missing cached shader map for material Landscape_Material, compiling. 
+[2018.10.29-14.55.39:429][  0]LogShaderCompilers: Display: Shaders left to compile 42
+[2018.10.29-14.55.39:429][  0]LogShaderCompilers: Display: Shaders left to compile 32
+[2018.10.29-14.55.39:429][  0]LogShaderCompilers: Display: Shaders left to compile 22
+[2018.10.29-14.55.39:429][  0]LogShaderCompilers: Display: Shaders left to compile 12
+[2018.10.29-14.55.39:429][  0]LogShaderCompilers: Display: Shaders left to compile 2
+[2018.10.29-14.55.39:429][  0]LogAIModule: Creating AISystem for world Minimal_Default
+[2018.10.29-14.55.43:898][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2018.10.29-14.55.43:986][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2018.10.29-14.55.48:178][  0]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 4,192.245ms to complete.
+[2018.10.29-14.55.48:178][  0]LogFileHelpers: Loading map 'Minimal_Default' took 15.448
+[2018.10.29-14.55.49:006][  0]LogCollectionManager: Loaded 0 collections in 0.005915 seconds
+[2018.10.29-14.55.49:130][  0]LogFileCache: Scanning file cache for directory 'C:/Users/turoc/Documents/GitHub/CabinInTheForest/PhotogrammetryScene/Saved/Collections/' took 0.01s
+[2018.10.29-14.55.49:130][  0]LogFileCache: Scanning file cache for directory 'C:/Users/turoc/Documents/GitHub/CabinInTheForest/PhotogrammetryScene/Content/Developers/turoc/Collections/' took 0.01s
+[2018.10.29-14.55.49:130][  0]LogFileCache: Scanning file cache for directory 'C:/Users/turoc/Documents/GitHub/CabinInTheForest/PhotogrammetryScene/Content/Collections/' took 0.01s
+[2018.10.29-14.55.49:130][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000000 seconds
+[2018.10.29-14.55.49:142][  0]LogContentBrowser: Native class hierarchy populated in 0.0112 seconds. Added 2452 classes and 558 folders.
+[2018.10.29-14.55.49:208][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0006 seconds. Added 0 classes and 0 folders.
+[2018.10.29-14.55.50:925][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0004 seconds. Added 0 classes and 0 folders.
+[2018.10.29-14.55.50:964][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0006 seconds. Added 1 classes and 2 folders.
+[2018.10.29-14.55.51:535][  0]LogSlate: Took 0.032203 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2018.10.29-14.55.51:541][  0]LogSlate: Took 0.004052 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Bold.ttf' (160K)
+[2018.10.29-14.55.51:601][  0]LogSlate: Took 0.013001 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/FontAwesome.ttf' (139K)
+[2018.10.29-14.55.51:961][  0]LogRenderer: Reallocating scene render targets to support 848x412 Format 10 NumSamples 1 (Frame:1).
+[2018.10.29-14.55.52:326][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0007 seconds. Added 0 classes and 0 folders.
+[2018.10.29-14.55.52:326][  0]LogLoad: (Engine Initialization) Total time: 46.86 seconds
+[2018.10.29-14.55.52:326][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.00 seconds
+[2018.10.29-14.55.52:687][  0]LogContentStreaming: Texture pool size now 1000 MB
+[2018.10.29-14.55.52:778][  0]LogSlate: Took 0.027813 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
+[2018.10.29-14.55.53:341][  2]LogAssetRegistry: Asset discovery search completed in 34.8590 seconds
+[2018.10.29-14.55.53:344][  2]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000000 seconds (found 0 objects)
+[2018.10.29-14.55.53:344][  2]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000079 seconds (updated 0 objects)
+[2018.10.29-14.55.53:713][  3]LogSlate: Took 0.000463 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
+[2018.10.29-14.55.55:109][ 10]LogStaticMesh: Allocated 351x64x64 distance field atlas = 2.7Mb, with 44 objects containing 2.0Mb backing data
+[2018.10.29-14.56.08:452][453]LogSlate: FSceneViewport::OnFocusLost() reason 2
+[2018.10.29-14.56.23:416][340]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.10.29-14.56.24:606][408]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.10.29-14.56.27:332][450]LogActorComponent: UnregisterComponent: (/Engine/Transient.SphereBrushComponent) Not registered. Aborting.
+[2018.10.29-14.56.27:435][450]LogMaterial: Missing cached shader map for material Landscape_Material, compiling. 
+[2018.10.29-14.56.27:478][450]LogShaderCompilers: Display: Shaders left to compile 8
+[2018.10.29-14.56.27:628][450]LogTexture: Display: Building textures: Texture2D_2 (G8, 128X128)
+[2018.10.29-14.56.49:176][224]LogSlate: Window 'Message' being destroyed
+[2018.10.29-14.57.02:754][  0]Cmd: TRANSACTION UNDO
+[2018.10.29-14.57.02:754][  0]LogEditorTransaction: Undo Importing Landscape Layer
+[2018.10.29-14.57.04:247][ 48]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.10.29-14.57.07:649][110]LogSlate: Window 'Message' being destroyed
+[2018.10.29-14.57.07:672][110]LogMaterial: Missing cached shader map for material Landscape_Material, compiling. 
+[2018.10.29-14.57.07:692][110]LogMaterial: Missing cached shader map for material Landscape_Material, compiling. 
+[2018.10.29-14.57.07:706][110]LogShaderCompilers: Display: Shaders left to compile 42
+[2018.10.29-14.57.07:706][110]LogShaderCompilers: Display: Shaders left to compile 32
+[2018.10.29-14.57.07:706][110]LogShaderCompilers: Display: Shaders left to compile 22
+[2018.10.29-14.57.07:706][110]LogShaderCompilers: Display: Shaders left to compile 12
+[2018.10.29-14.57.12:196][361]LogShaderCompilers: Display: Shaders left to compile 44
+[2018.10.29-14.57.12:502][379]LogShaderCompilers: Display: Shaders left to compile 34
+[2018.10.29-14.57.14:028][469]LogShaderCompilers: Display: Shaders left to compile 24
+[2018.10.29-14.57.14:084][472]LogShaderCompilers: Display: Shaders left to compile 14
+[2018.10.29-14.57.16:166][595]LogShaderCompilers: Display: Shaders left to compile 4
+[2018.10.29-14.57.20:918][838]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.10.29-14.57.22:195][874]LogMaterial: Missing cached shader map for material Landscape_Material, compiling. 
+[2018.10.29-14.57.22:211][874]LogShaderCompilers: Display: Shaders left to compile 42
+[2018.10.29-14.57.22:211][874]LogShaderCompilers: Display: Shaders left to compile 32
+[2018.10.29-14.57.22:211][874]LogShaderCompilers: Display: Shaders left to compile 22
+[2018.10.29-14.57.22:212][874]LogShaderCompilers: Display: Shaders left to compile 12
+[2018.10.29-14.57.22:230][874]LogTexture: Display: Building textures: Texture2D_0 (BGRA8, 64X64)
+[2018.10.29-14.57.22:244][874]LogMaterial: Missing cached shader map for material Landscape_Material, compiling. 
+[2018.10.29-14.57.22:309][874]LogTexture: Display: Building textures: Texture2D_2 (BGRA8, 64X64)
+[2018.10.29-14.57.22:324][874]LogTexture: Display: Building textures: Texture2D_3 (BGRA8, 64X64)
+[2018.10.29-14.57.22:331][874]LogTexture: Display: Building textures: Texture2D_4 (BGRA8, 64X64)
+[2018.10.29-14.57.22:356][874]LogTexture: Display: Building textures: Texture2D_5 (BGRA8, 64X64)
+[2018.10.29-14.57.22:382][874]LogTexture: Display: Building textures: Texture2D_6 (BGRA8, 64X64)
+[2018.10.29-14.57.22:399][874]LogTexture: Display: Building textures: Texture2D_7 (BGRA8, 64X64)
+[2018.10.29-14.57.22:415][874]LogTexture: Display: Building textures: Texture2D_8 (BGRA8, 64X64)
+[2018.10.29-14.57.22:422][874]LogTexture: Display: Building textures: Texture2D_9 (BGRA8, 64X64)
+[2018.10.29-14.57.22:444][874]LogTexture: Display: Building textures: Texture2D_10 (BGRA8, 64X64)
+[2018.10.29-14.57.22:556][876]LogTexture: Display: Building textures: Texture2D_11 (BGRA8, 64X64)
+[2018.10.29-14.57.22:569][876]LogTexture: Display: Building textures: Texture2D_12 (BGRA8, 64X64)
+[2018.10.29-14.57.25:890][ 19]LogShaderCompilers: Display: Shaders left to compile 44
+[2018.10.29-14.57.26:191][ 31]LogShaderCompilers: Display: Shaders left to compile 34
+[2018.10.29-14.57.27:904][100]LogShaderCompilers: Display: Shaders left to compile 24
+[2018.10.29-14.57.28:077][107]LogShaderCompilers: Display: Shaders left to compile 14
+[2018.10.29-14.57.29:766][171]LogShaderCompilers: Display: Shaders left to compile 4
+[2018.10.29-14.57.42:309][527]Cmd: TRANSACTION UNDO
+[2018.10.29-14.57.42:309][527]LogEditorTransaction: Undo Landscape Editing: Paint
+[2018.10.29-14.57.42:402][527]LogTexture: Display: Building textures: Texture2D_88 (BGRA8, 64X64)
+[2018.10.29-14.57.42:416][527]LogTexture: Display: Building textures: Texture2D_41 (BGRA8, 64X64)
+[2018.10.29-14.57.42:430][527]LogTexture: Display: Building textures: Texture2D_39 (BGRA8, 64X64)
+[2018.10.29-14.57.42:458][527]LogTexture: Display: Building textures: Texture2D_38 (BGRA8, 64X64)
+[2018.10.29-14.57.42:472][527]LogTexture: Display: Building textures: Texture2D_53 (BGRA8, 64X64)
+[2018.10.29-14.57.42:479][527]LogTexture: Display: Building textures: Texture2D_98 (BGRA8, 64X64)
+[2018.10.29-14.57.42:507][527]LogTexture: Display: Building textures: Texture2D_86 (BGRA8, 64X64)
+[2018.10.29-14.57.42:519][527]LogTexture: Display: Building textures: Texture2D_40 (BGRA8, 64X64)
+[2018.10.29-14.57.42:525][527]LogTexture: Display: Building textures: Texture2D_87 (BGRA8, 64X64)
+[2018.10.29-14.57.42:535][527]LogTexture: Display: Building textures: Texture2D_92 (BGRA8, 64X64)
+[2018.10.29-14.57.42:564][527]LogTexture: Display: Building textures: Texture2D_51 (BGRA8, 64X64)
+[2018.10.29-14.57.42:576][527]LogTexture: Display: Building textures: Texture2D_52 (BGRA8, 64X64)
+[2018.10.29-14.57.42:588][527]LogTexture: Display: Building textures: Texture2D_37 (BGRA8, 64X64)
+[2018.10.29-14.57.42:598][527]LogTexture: Display: Building textures: Texture2D_35 (BGRA8, 64X64)
+[2018.10.29-14.57.42:623][527]LogTexture: Display: Building textures: Texture2D_45 (BGRA8, 64X64)
+[2018.10.29-14.57.42:668][527]LogActorComponent: ~FComponentReregisterContext: (/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Landscape_2.LandscapeComponent_98) Component already registered.
+[2018.10.29-14.57.42:668][527]LogActorComponent: ~FComponentReregisterContext: (/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Landscape_2.LandscapeHeightfieldCollisionComponent_225) Component already registered.
+[2018.10.29-14.57.42:675][527]LogTexture: Display: Building textures: Texture2D_91 (BGRA8, 64X64)
+[2018.10.29-14.57.49:379][670]LogSlate: FSceneViewport::OnFocusLost() reason 2
+[2018.10.29-14.57.52:086][788]LogTexture: Display: Building textures: Texture2D_13 (BGRA8, 64X64)
+[2018.10.29-14.57.52:111][788]LogTexture: Display: Building textures: Texture2D_14 (BGRA8, 64X64)
+[2018.10.29-14.57.52:115][788]LogTexture: Display: Building textures: Texture2D_15 (BGRA8, 64X64)
+[2018.10.29-14.57.52:137][788]LogTexture: Display: Building textures: Texture2D_16 (BGRA8, 64X64)
+[2018.10.29-14.57.52:154][788]LogTexture: Display: Building textures: Texture2D_17 (BGRA8, 64X64)
+[2018.10.29-14.57.52:166][788]LogTexture: Display: Building textures: Texture2D_18 (BGRA8, 64X64)
+[2018.10.29-14.57.52:171][788]LogTexture: Display: Building textures: Texture2D_19 (BGRA8, 64X64)
+[2018.10.29-14.57.52:181][788]LogTexture: Display: Building textures: Texture2D_20 (BGRA8, 64X64)
+[2018.10.29-14.57.52:205][788]LogTexture: Display: Building textures: Texture2D_21 (BGRA8, 64X64)
+[2018.10.29-14.57.58:866][ 56]Cmd: TRANSACTION UNDO
+[2018.10.29-14.57.58:866][ 56]LogEditorTransaction: Undo Landscape Editing: Paint
+[2018.10.29-14.57.58:966][ 56]LogActorComponent: ~FComponentReregisterContext: (/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Landscape_2.LandscapeComponent_91) Component already registered.
+[2018.10.29-14.57.58:977][ 56]LogActorComponent: ~FComponentReregisterContext: (/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Landscape_2.LandscapeHeightfieldCollisionComponent_217) Component already registered.
+[2018.10.29-14.57.58:979][ 56]LogActorComponent: ~FComponentReregisterContext: (/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Landscape_2.LandscapeComponent_90) Component already registered.
+[2018.10.29-14.57.58:979][ 56]LogActorComponent: ~FComponentReregisterContext: (/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Landscape_2.LandscapeHeightfieldCollisionComponent_218) Component already registered.
+[2018.10.29-14.57.58:979][ 56]LogActorComponent: ~FComponentReregisterContext: (/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Landscape_2.LandscapeHeightfieldCollisionComponent_219) Component already registered.
+[2018.10.29-14.57.58:979][ 56]LogActorComponent: ~FComponentReregisterContext: (/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Landscape_2.LandscapeComponent_89) Component already registered.
+[2018.10.29-14.57.58:980][ 56]LogActorComponent: ~FComponentReregisterContext: (/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Landscape_2.LandscapeComponent_92) Component already registered.
+[2018.10.29-14.57.58:992][ 56]LogActorComponent: ~FComponentReregisterContext: (/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Landscape_2.LandscapeHeightfieldCollisionComponent_220) Component already registered.
+[2018.10.29-14.57.58:993][ 56]LogActorComponent: ~FComponentReregisterContext: (/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Landscape_2.LandscapeHeightfieldCollisionComponent_212) Component already registered.
+[2018.10.29-14.57.59:004][ 56]LogActorComponent: ~FComponentReregisterContext: (/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Landscape_2.LandscapeHeightfieldCollisionComponent_204) Component already registered.
+[2018.10.29-14.57.59:005][ 56]LogActorComponent: ~FComponentReregisterContext: (/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Landscape_2.LandscapeComponent_81) Component already registered.
+[2018.10.29-14.57.59:010][ 56]LogActorComponent: ~FComponentReregisterContext: (/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Landscape_2.LandscapeHeightfieldCollisionComponent_209) Component already registered.
+[2018.10.29-14.57.59:012][ 56]LogActorComponent: ~FComponentReregisterContext: (/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Landscape_2.LandscapeComponent_82) Component already registered.
+[2018.10.29-14.57.59:018][ 56]LogActorComponent: ~FComponentReregisterContext: (/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Landscape_2.LandscapeComponent_84) Component already registered.
+[2018.10.29-14.57.59:018][ 56]LogActorComponent: ~FComponentReregisterContext: (/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Landscape_2.LandscapeHeightfieldCollisionComponent_210) Component already registered.
+[2018.10.29-14.57.59:019][ 56]LogActorComponent: ~FComponentReregisterContext: (/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Landscape_2.LandscapeComponent_83) Component already registered.
+[2018.10.29-14.57.59:032][ 56]LogActorComponent: ~FComponentReregisterContext: (/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Landscape_2.LandscapeHeightfieldCollisionComponent_211) Component already registered.
+[2018.10.29-14.58.09:951][543]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.10.29-15.00.17:398][264]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.10.29-15.00.21:591][320]LogSlate: Window 'Message' being destroyed
+[2018.10.29-15.00.21:647][320]LogTexture: Display: Building textures: Texture2D_22 (BGRA8, 64X64)
+[2018.10.29-15.00.21:652][320]LogTexture: Display: Building textures: Texture2D_23 (BGRA8, 64X64)
+[2018.10.29-15.00.21:663][320]LogTexture: Display: Building textures: Texture2D_24 (BGRA8, 64X64)
+[2018.10.29-15.00.21:674][320]LogTexture: Display: Building textures: Texture2D_25 (BGRA8, 64X64)
+[2018.10.29-15.00.21:683][320]LogTexture: Display: Building textures: Texture2D_26 (BGRA8, 64X64)
+[2018.10.29-15.00.21:701][320]LogTexture: Display: Building textures: Texture2D_27 (BGRA8, 64X64)
+[2018.10.29-15.00.21:711][320]LogTexture: Display: Building textures: Texture2D_28 (BGRA8, 64X64)
+[2018.10.29-15.00.21:721][320]LogTexture: Display: Building textures: Texture2D_29 (BGRA8, 64X64)
+[2018.10.29-15.00.21:737][320]LogTexture: Display: Building textures: Texture2D_30 (BGRA8, 64X64)
+[2018.10.29-15.00.21:750][320]LogTexture: Display: Building textures: Texture2D_31 (BGRA8, 64X64)
+[2018.10.29-15.00.21:756][320]LogTexture: Display: Building textures: Texture2D_32 (BGRA8, 64X64)
+[2018.10.29-15.00.21:776][320]LogTexture: Display: Building textures: Texture2D_33 (BGRA8, 64X64)
+[2018.10.29-15.00.21:781][320]LogTexture: Display: Building textures: Texture2D_34 (BGRA8, 64X64)
+[2018.10.29-15.00.21:790][320]LogTexture: Display: Building textures: Texture2D_54 (BGRA8, 64X64)
+[2018.10.29-15.00.21:808][320]LogTexture: Display: Building textures: Texture2D_55 (BGRA8, 64X64)
+[2018.10.29-15.00.21:826][320]LogTexture: Display: Building textures: Texture2D_56 (BGRA8, 64X64)
+[2018.10.29-15.00.21:844][320]LogTexture: Display: Building textures: Texture2D_57 (BGRA8, 64X64)
+[2018.10.29-15.00.21:850][320]LogTexture: Display: Building textures: Texture2D_58 (BGRA8, 64X64)
+[2018.10.29-15.00.21:860][320]LogTexture: Display: Building textures: Texture2D_59 (BGRA8, 64X64)
+[2018.10.29-15.00.21:871][320]LogTexture: Display: Building textures: Texture2D_60 (BGRA8, 64X64)
+[2018.10.29-15.00.21:891][320]LogTexture: Display: Building textures: Texture2D_61 (BGRA8, 64X64)
+[2018.10.29-15.00.21:906][320]LogTexture: Display: Building textures: Texture2D_62 (BGRA8, 64X64)
+[2018.10.29-15.00.21:912][320]LogTexture: Display: Building textures: Texture2D_63 (BGRA8, 64X64)
+[2018.10.29-15.00.21:925][320]LogTexture: Display: Building textures: Texture2D_64 (BGRA8, 64X64)
+[2018.10.29-15.00.21:933][320]LogTexture: Display: Building textures: Texture2D_65 (BGRA8, 64X64)
+[2018.10.29-15.00.21:945][320]LogTexture: Display: Building textures: Texture2D_66 (BGRA8, 64X64)
+[2018.10.29-15.00.21:956][320]LogTexture: Display: Building textures: Texture2D_67 (BGRA8, 64X64)
+[2018.10.29-15.00.21:978][320]LogTexture: Display: Building textures: Texture2D_68 (BGRA8, 64X64)
+[2018.10.29-15.00.37:267][155]LogSlate: FSceneViewport::OnFocusLost() reason 2
+[2018.10.29-15.00.38:004][194]Cmd: TRANSACTION UNDO
+[2018.10.29-15.00.38:004][194]LogEditorTransaction: Undo Importing Landscape Layer
+[2018.10.29-15.00.38:131][194]LogTexture: Display: Building textures: Texture2D_42 (BGRA8, 64X64)
+[2018.10.29-15.00.38:140][194]LogTexture: Display: Building textures: Texture2D_89 (BGRA8, 64X64)
+[2018.10.29-15.00.38:188][194]LogActorComponent: ~FComponentReregisterContext: (/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Landscape_2.LandscapeHeightfieldCollisionComponent_193) Component already registered.
+[2018.10.29-15.00.38:189][194]LogActorComponent: ~FComponentReregisterContext: (/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Landscape_2.LandscapeHeightfieldCollisionComponent_192) Component already registered.
+[2018.10.29-15.00.38:190][194]LogActorComponent: ~FComponentReregisterContext: (/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Landscape_2.LandscapeComponent_65) Component already registered.
+[2018.10.29-15.00.38:252][194]LogTexture: Display: Building textures: Texture2D_36 (BGRA8, 64X64)
+[2018.10.29-15.00.38:254][194]LogActorComponent: ~FComponentReregisterContext: (/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Landscape_2.LandscapeHeightfieldCollisionComponent_205) Component already registered.
+[2018.10.29-15.00.38:257][194]LogActorComponent: ~FComponentReregisterContext: (/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Landscape_2.LandscapeComponent_76) Component already registered.
+[2018.10.29-15.00.38:259][194]LogActorComponent: ~FComponentReregisterContext: (/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Landscape_2.LandscapeComponent_75) Component already registered.
+[2018.10.29-15.00.38:276][194]LogActorComponent: ~FComponentReregisterContext: (/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Landscape_2.LandscapeHeightfieldCollisionComponent_203) Component already registered.
+[2018.10.29-15.00.38:283][194]LogActorComponent: ~FComponentReregisterContext: (/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Landscape_2.LandscapeHeightfieldCollisionComponent_202) Component already registered.
+[2018.10.29-15.00.38:290][194]LogActorComponent: ~FComponentReregisterContext: (/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Landscape_2.LandscapeHeightfieldCollisionComponent_204) Component already registered.
+[2018.10.29-15.00.38:291][194]LogActorComponent: ~FComponentReregisterContext: (/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Landscape_2.LandscapeComponent_77) Component already registered.
+[2018.10.29-15.00.38:304][194]LogActorComponent: ~FComponentReregisterContext: (/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Landscape_2.LandscapeHeightfieldCollisionComponent_197) Component already registered.
+[2018.10.29-15.00.38:305][194]LogActorComponent: ~FComponentReregisterContext: (/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Landscape_2.LandscapeHeightfieldCollisionComponent_199) Component already registered.
+[2018.10.29-15.00.38:306][194]LogActorComponent: ~FComponentReregisterContext: (/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Landscape_2.LandscapeComponent_70) Component already registered.
+[2018.10.29-15.00.38:306][194]LogActorComponent: ~FComponentReregisterContext: (/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Landscape_2.LandscapeHeightfieldCollisionComponent_198) Component already registered.
+[2018.10.29-15.00.38:308][194]LogActorComponent: ~FComponentReregisterContext: (/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Landscape_2.LandscapeComponent_71) Component already registered.
+[2018.10.29-15.00.38:308][194]LogActorComponent: ~FComponentReregisterContext: (/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Landscape_2.LandscapeComponent_72) Component already registered.
+[2018.10.29-15.00.38:308][194]LogActorComponent: ~FComponentReregisterContext: (/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Landscape_2.LandscapeComponent_74) Component already registered.
+[2018.10.29-15.00.38:315][194]LogActorComponent: ~FComponentReregisterContext: (/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Landscape_2.LandscapeHeightfieldCollisionComponent_200) Component already registered.
+[2018.10.29-15.00.38:316][194]LogActorComponent: ~FComponentReregisterContext: (/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Landscape_2.LandscapeComponent_73) Component already registered.
+[2018.10.29-15.00.38:316][194]LogActorComponent: ~FComponentReregisterContext: (/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Landscape_2.LandscapeHeightfieldCollisionComponent_201) Component already registered.
+[2018.10.29-15.00.38:323][194]LogActorComponent: ~FComponentReregisterContext: (/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Landscape_2.LandscapeHeightfieldCollisionComponent_255) Component already registered.
+[2018.10.29-15.00.38:330][194]LogActorComponent: ~FComponentReregisterContext: (/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Landscape_2.LandscapeComponent_116) Component already registered.
+[2018.10.29-15.00.38:331][194]LogActorComponent: ~FComponentReregisterContext: (/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Landscape_2.LandscapeHeightfieldCollisionComponent_244) Component already registered.
+[2018.10.29-15.00.38:332][194]LogActorComponent: ~FComponentReregisterContext: (/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Landscape_2.LandscapeComponent_117) Component already registered.
+[2018.10.29-15.00.38:338][194]LogTexture: Display: Building textures: Texture2D_48 (BGRA8, 64X64)
+[2018.10.29-15.00.38:339][194]LogActorComponent: ~FComponentReregisterContext: (/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Landscape_2.LandscapeHeightfieldCollisionComponent_243) Component already registered.
+[2018.10.29-15.00.38:339][194]LogActorComponent: ~FComponentReregisterContext: (/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Landscape_2.LandscapeHeightfieldCollisionComponent_245) Component already registered.
+[2018.10.29-15.00.38:341][194]LogActorComponent: ~FComponentReregisterContext: (/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Landscape_2.LandscapeComponent_118) Component already registered.
+[2018.10.29-15.00.38:355][194]LogTexture: Display: Building textures: Texture2D_96 (BGRA8, 64X64)
+[2018.10.29-15.00.38:356][194]LogActorComponent: ~FComponentReregisterContext: (/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Landscape_2.LandscapeComponent_115) Component already registered.
+[2018.10.29-15.00.38:356][194]LogActorComponent: ~FComponentReregisterContext: (/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Landscape_2.LandscapeHeightfieldCollisionComponent_246) Component already registered.
+[2018.10.29-15.00.38:357][194]LogActorComponent: ~FComponentReregisterContext: (/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Landscape_2.LandscapeHeightfieldCollisionComponent_240) Component already registered.
+[2018.10.29-15.00.38:358][194]LogActorComponent: ~FComponentReregisterContext: (/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Landscape_2.LandscapeComponent_111) Component already registered.
+[2018.10.29-15.00.38:358][194]LogActorComponent: ~FComponentReregisterContext: (/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Landscape_2.LandscapeHeightfieldCollisionComponent_239) Component already registered.
+[2018.10.29-15.00.38:359][194]LogActorComponent: ~FComponentReregisterContext: (/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Landscape_2.LandscapeComponent_112) Component already registered.
+[2018.10.29-15.00.38:360][194]LogActorComponent: ~FComponentReregisterContext: (/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Landscape_2.LandscapeComponent_113) Component already registered.
+[2018.10.29-15.00.38:360][194]LogActorComponent: ~FComponentReregisterContext: (/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Landscape_2.LandscapeHeightfieldCollisionComponent_242) Component already registered.
+[2018.10.29-15.00.38:393][194]LogTexture: Display: Building textures: Texture2D_47 (BGRA8, 64X64)
+[2018.10.29-15.00.38:394][194]LogActorComponent: ~FComponentReregisterContext: (/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Landscape_2.LandscapeHeightfieldCollisionComponent_241) Component already registered.
+[2018.10.29-15.00.38:395][194]LogActorComponent: ~FComponentReregisterContext: (/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Landscape_2.LandscapeComponent_114) Component already registered.
+[2018.10.29-15.00.38:426][194]LogTexture: Display: Building textures: Texture2D_95 (BGRA8, 64X64)
+[2018.10.29-15.00.38:427][194]LogActorComponent: ~FComponentReregisterContext: (/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Landscape_2.LandscapeComponent_119) Component already registered.
+[2018.10.29-15.00.38:427][194]LogActorComponent: ~FComponentReregisterContext: (/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Landscape_2.LandscapeHeightfieldCollisionComponent_238) Component already registered.
+[2018.10.29-15.00.38:435][194]LogTexture: Display: Building textures: Texture2D_50 (BGRA8, 64X64)
+[2018.10.29-15.00.38:443][194]LogActorComponent: ~FComponentReregisterContext: (/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Landscape_2.LandscapeHeightfieldCollisionComponent_252) Component already registered.
+[2018.10.29-15.00.38:444][194]LogActorComponent: ~FComponentReregisterContext: (/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Landscape_2.LandscapeComponent_125) Component already registered.
+[2018.10.29-15.00.38:444][194]LogActorComponent: ~FComponentReregisterContext: (/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Landscape_2.LandscapeHeightfieldCollisionComponent_253) Component already registered.
+[2018.10.29-15.00.38:445][194]LogActorComponent: ~FComponentReregisterContext: (/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Landscape_2.LandscapeComponent_124) Component already registered.
+[2018.10.29-15.00.38:445][194]LogActorComponent: ~FComponentReregisterContext: (/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Landscape_2.LandscapeComponent_126) Component already registered.
+[2018.10.29-15.00.38:452][194]LogActorComponent: ~FComponentReregisterContext: (/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Landscape_2.LandscapeHeightfieldCollisionComponent_254) Component already registered.
+[2018.10.29-15.00.38:453][194]LogActorComponent: ~FComponentReregisterContext: (/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Landscape_2.LandscapeComponent_127) Component already registered.
+[2018.10.29-15.00.38:453][194]LogActorComponent: ~FComponentReregisterContext: (/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Landscape_2.LandscapeHeightfieldCollisionComponent_251) Component already registered.
+[2018.10.29-15.00.38:454][194]LogActorComponent: ~FComponentReregisterContext: (/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Landscape_2.LandscapeHeightfieldCollisionComponent_247) Component already registered.
+[2018.10.29-15.00.38:461][194]LogActorComponent: ~FComponentReregisterContext: (/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Landscape_2.LandscapeComponent_120) Component already registered.
+[2018.10.29-15.00.38:462][194]LogActorComponent: ~FComponentReregisterContext: (/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Landscape_2.LandscapeHeightfieldCollisionComponent_248) Component already registered.
+[2018.10.29-15.00.38:462][194]LogActorComponent: ~FComponentReregisterContext: (/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Landscape_2.LandscapeComponent_121) Component already registered.
+[2018.10.29-15.00.38:468][194]LogTexture: Display: Building textures: Texture2D_49 (BGRA8, 64X64)
+[2018.10.29-15.00.38:470][194]LogActorComponent: ~FComponentReregisterContext: (/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Landscape_2.LandscapeComponent_123) Component already registered.
+[2018.10.29-15.00.38:470][194]LogActorComponent: ~FComponentReregisterContext: (/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Landscape_2.LandscapeHeightfieldCollisionComponent_249) Component already registered.
+[2018.10.29-15.00.38:470][194]LogActorComponent: ~FComponentReregisterContext: (/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Landscape_2.LandscapeComponent_122) Component already registered.
+[2018.10.29-15.00.38:506][194]LogTexture: Display: Building textures: Texture2D_97 (BGRA8, 64X64)
+[2018.10.29-15.00.38:507][194]LogActorComponent: ~FComponentReregisterContext: (/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Landscape_2.LandscapeHeightfieldCollisionComponent_250) Component already registered.
+[2018.10.29-15.00.38:515][194]LogTexture: Display: Building textures: Texture2D_94 (BGRA8, 64X64)
+[2018.10.29-15.00.38:523][194]LogTexture: Display: Building textures: Texture2D_90 (BGRA8, 64X64)
+[2018.10.29-15.00.38:525][194]LogActorComponent: ~FComponentReregisterContext: (/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Landscape_2.LandscapeComponent_100) Component already registered.
+[2018.10.29-15.00.38:525][194]LogActorComponent: ~FComponentReregisterContext: (/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Landscape_2.LandscapeHeightfieldCollisionComponent_226) Component already registered.
+[2018.10.29-15.00.38:526][194]LogActorComponent: ~FComponentReregisterContext: (/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Landscape_2.LandscapeComponent_99) Component already registered.
+[2018.10.29-15.00.38:526][194]LogActorComponent: ~FComponentReregisterContext: (/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Landscape_2.LandscapeHeightfieldCollisionComponent_227) Component already registered.
+[2018.10.29-15.00.38:547][194]LogActorComponent: ~FComponentReregisterContext: (/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Landscape_2.LandscapeHeightfieldCollisionComponent_228) Component already registered.
+[2018.10.29-15.00.38:548][194]LogActorComponent: ~FComponentReregisterContext: (/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Landscape_2.LandscapeComponent_101) Component already registered.
+[2018.10.29-15.00.38:555][194]LogTexture: Display: Building textures: Texture2D_44 (BGRA8, 64X64)
+[2018.10.29-15.00.38:565][194]LogActorComponent: ~FComponentReregisterContext: (/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Landscape_2.LandscapeHeightfieldCollisionComponent_229) Component already registered.
+[2018.10.29-15.00.38:566][194]LogActorComponent: ~FComponentReregisterContext: (/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Landscape_2.LandscapeComponent_96) Component already registered.
+[2018.10.29-15.00.38:566][194]LogActorComponent: ~FComponentReregisterContext: (/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Landscape_2.LandscapeHeightfieldCollisionComponent_222) Component already registered.
+[2018.10.29-15.00.38:567][194]LogActorComponent: ~FComponentReregisterContext: (/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Landscape_2.LandscapeComponent_95) Component already registered.
+[2018.10.29-15.00.38:567][194]LogActorComponent: ~FComponentReregisterContext: (/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Landscape_2.LandscapeHeightfieldCollisionComponent_223) Component already registered.
+[2018.10.29-15.00.38:568][194]LogActorComponent: ~FComponentReregisterContext: (/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Landscape_2.LandscapeHeightfieldCollisionComponent_224) Component already registered.
+[2018.10.29-15.00.38:569][194]LogActorComponent: ~FComponentReregisterContext: (/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Landscape_2.LandscapeComponent_98) Component already registered.
+[2018.10.29-15.00.38:569][194]LogActorComponent: ~FComponentReregisterContext: (/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Landscape_2.LandscapeComponent_97) Component already registered.
+[2018.10.29-15.00.38:583][194]LogActorComponent: ~FComponentReregisterContext: (/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Landscape_2.LandscapeHeightfieldCollisionComponent_225) Component already registered.
+[2018.10.29-15.00.38:584][194]LogActorComponent: ~FComponentReregisterContext: (/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Landscape_2.LandscapeComponent_102) Component already registered.
+[2018.10.29-15.00.38:591][194]LogActorComponent: ~FComponentReregisterContext: (/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Landscape_2.LandscapeHeightfieldCollisionComponent_236) Component already registered.
+[2018.10.29-15.00.38:592][194]LogActorComponent: ~FComponentReregisterContext: (/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Landscape_2.LandscapeComponent_107) Component already registered.
+[2018.10.29-15.00.38:592][194]LogActorComponent: ~FComponentReregisterContext: (/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Landscape_2.LandscapeHeightfieldCollisionComponent_235) Component already registered.
+[2018.10.29-15.00.38:593][194]LogActorComponent: ~FComponentReregisterContext: (/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Landscape_2.LandscapeComponent_108) Component already registered.
+[2018.10.29-15.00.38:594][194]LogActorComponent: ~FComponentReregisterContext: (/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Landscape_2.LandscapeComponent_109) Component already registered.
+[2018.10.29-15.00.38:594][194]LogActorComponent: ~FComponentReregisterContext: (/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Landscape_2.LandscapeHeightfieldCollisionComponent_234) Component already registered.
+[2018.10.29-15.00.38:606][194]LogTexture: Display: Building textures: Texture2D_46 (BGRA8, 64X64)
+[2018.10.29-15.00.38:607][194]LogActorComponent: ~FComponentReregisterContext: (/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Landscape_2.LandscapeHeightfieldCollisionComponent_237) Component already registered.
+[2018.10.29-15.00.38:608][194]LogActorComponent: ~FComponentReregisterContext: (/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Landscape_2.LandscapeComponent_110) Component already registered.
+[2018.10.29-15.00.38:614][194]LogTexture: Display: Building textures: Texture2D_93 (BGRA8, 64X64)
+[2018.10.29-15.00.38:615][194]LogActorComponent: ~FComponentReregisterContext: (/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Landscape_2.LandscapeHeightfieldCollisionComponent_230) Component already registered.
+[2018.10.29-15.00.38:615][194]LogActorComponent: ~FComponentReregisterContext: (/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Landscape_2.LandscapeHeightfieldCollisionComponent_232) Component already registered.
+[2018.10.29-15.00.38:616][194]LogActorComponent: ~FComponentReregisterContext: (/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Landscape_2.LandscapeComponent_103) Component already registered.
+[2018.10.29-15.00.38:616][194]LogActorComponent: ~FComponentReregisterContext: (/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Landscape_2.LandscapeHeightfieldCollisionComponent_231) Component already registered.
+[2018.10.29-15.00.38:617][194]LogActorComponent: ~FComponentReregisterContext: (/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Landscape_2.LandscapeComponent_104) Component already registered.
+[2018.10.29-15.00.38:618][194]LogActorComponent: ~FComponentReregisterContext: (/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Landscape_2.LandscapeComponent_105) Component already registered.
+[2018.10.29-15.00.38:636][194]LogTexture: Display: Building textures: Texture2D_43 (BGRA8, 64X64)
+[2018.10.29-15.00.38:636][194]LogActorComponent: ~FComponentReregisterContext: (/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Landscape_2.LandscapeHeightfieldCollisionComponent_233) Component already registered.
+[2018.10.29-15.00.38:637][194]LogActorComponent: ~FComponentReregisterContext: (/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Landscape_2.LandscapeComponent_106) Component already registered.
+[2018.10.29-15.01.52:383][705]LogSlate: Window 'Message' being destroyed
+[2018.10.29-15.01.52:405][705]LogTexture: Display: Building textures: Texture2D_69 (BGRA8, 64X64)
+[2018.10.29-15.01.52:411][705]LogTexture: Display: Building textures: Texture2D_70 (BGRA8, 64X64)
+[2018.10.29-15.01.52:422][705]LogTexture: Display: Building textures: Texture2D_71 (BGRA8, 64X64)
+[2018.10.29-15.01.52:433][705]LogTexture: Display: Building textures: Texture2D_72 (BGRA8, 64X64)
+[2018.10.29-15.01.52:445][705]LogTexture: Display: Building textures: Texture2D_73 (BGRA8, 64X64)
+[2018.10.29-15.01.52:461][705]LogTexture: Display: Building textures: Texture2D_74 (BGRA8, 64X64)
+[2018.10.29-15.01.52:482][705]LogTexture: Display: Building textures: Texture2D_75 (BGRA8, 64X64)
+[2018.10.29-15.01.52:499][705]LogTexture: Display: Building textures: Texture2D_76 (BGRA8, 64X64)
+[2018.10.29-15.01.52:505][705]LogTexture: Display: Building textures: Texture2D_77 (BGRA8, 64X64)
+[2018.10.29-15.01.52:516][705]LogTexture: Display: Building textures: Texture2D_78 (BGRA8, 64X64)
+[2018.10.29-15.01.52:526][705]LogTexture: Display: Building textures: Texture2D_79 (BGRA8, 64X64)
+[2018.10.29-15.01.52:552][705]LogTexture: Display: Building textures: Texture2D_80 (BGRA8, 64X64)
+[2018.10.29-15.01.52:557][705]LogTexture: Display: Building textures: Texture2D_81 (BGRA8, 64X64)
+[2018.10.29-15.01.52:569][705]LogTexture: Display: Building textures: Texture2D_82 (BGRA8, 64X64)
+[2018.10.29-15.01.52:583][705]LogTexture: Display: Building textures: Texture2D_83 (BGRA8, 64X64)
+[2018.10.29-15.01.52:602][705]LogTexture: Display: Building textures: Texture2D_84 (BGRA8, 64X64)
+[2018.10.29-15.01.52:632][705]LogTexture: Display: Building textures: Texture2D_85 (BGRA8, 64X64)
+[2018.10.29-15.01.52:645][705]LogTexture: Display: Building textures: Texture2D_99 (BGRA8, 64X64)
+[2018.10.29-15.01.52:650][705]LogTexture: Display: Building textures: Texture2D_100 (BGRA8, 64X64)
+[2018.10.29-15.01.52:667][705]LogTexture: Display: Building textures: Texture2D_101 (BGRA8, 64X64)
+[2018.10.29-15.01.52:672][705]LogTexture: Display: Building textures: Texture2D_102 (BGRA8, 64X64)
+[2018.10.29-15.01.52:692][705]LogTexture: Display: Building textures: Texture2D_103 (BGRA8, 64X64)
+[2018.10.29-15.01.52:705][705]LogTexture: Display: Building textures: Texture2D_104 (BGRA8, 64X64)
+[2018.10.29-15.01.52:717][705]LogTexture: Display: Building textures: Texture2D_105 (BGRA8, 64X64)
+[2018.10.29-15.01.52:726][705]LogTexture: Display: Building textures: Texture2D_106 (BGRA8, 64X64)
+[2018.10.29-15.01.52:736][705]LogTexture: Display: Building textures: Texture2D_107 (BGRA8, 64X64)
+[2018.10.29-15.01.52:748][705]LogTexture: Display: Building textures: Texture2D_108 (BGRA8, 64X64)
+[2018.10.29-15.01.52:768][705]LogTexture: Display: Building textures: Texture2D_109 (BGRA8, 64X64)
+[2018.10.29-15.03.23:571][364]LogSlate: FSceneViewport::OnFocusLost() reason 2
+[2018.10.29-15.03.28:012][546]LogSlate: Window 'Message' being destroyed
+[2018.10.29-15.03.43:934][487]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.10.29-15.03.45:898][598]LogMaterial: Missing cached shader map for material Landscape_Material, compiling. 
+[2018.10.29-15.03.47:037][598]LogMaterial: Missing cached shader map for material Landscape_Material, compiling. 
+[2018.10.29-15.03.47:072][598]LogShaderCompilers: Display: Shaders left to compile 16
+[2018.10.29-15.03.47:072][598]LogShaderCompilers: Display: Shaders left to compile 15
+[2018.10.29-15.03.47:072][598]LogShaderCompilers: Display: Shaders left to compile 14
+[2018.10.29-15.03.47:072][598]LogShaderCompilers: Display: Shaders left to compile 13
+[2018.10.29-15.03.47:088][598]LogMaterial: Missing cached shader map for material Landscape_Material, compiling. 
+[2018.10.29-15.03.47:135][598]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionConstant3Vector_0, compiling. 
+[2018.10.29-15.03.47:181][598]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionLandscapeLayerCoords_0, compiling. 
+[2018.10.29-15.03.47:186][598]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_0, compiling. 
+[2018.10.29-15.03.47:191][598]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_1, compiling. 
+[2018.10.29-15.03.47:197][598]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_2, compiling. 
+[2018.10.29-15.03.47:200][598]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_3, compiling. 
+[2018.10.29-15.03.47:232][598]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_4, compiling. 
+[2018.10.29-15.03.47:237][598]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_5, compiling. 
+[2018.10.29-15.03.47:241][598]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_6, compiling. 
+[2018.10.29-15.03.47:249][598]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_7, compiling. 
+[2018.10.29-15.03.47:252][598]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_8, compiling. 
+[2018.10.29-15.03.47:318][598]LogSlate: Took 0.026028 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-BoldCondensed.ttf' (158K)
+[2018.10.29-15.03.47:757][598]LogStaticMesh: Allocated 385x64x64 distance field atlas = 3.0Mb, with 47 objects containing 2.2Mb backing data
+[2018.10.29-15.03.48:041][607]LogShaderCompilers: Display: Shaders left to compile 38
+[2018.10.29-15.03.48:253][616]LogShaderCompilers: Display: Shaders left to compile 37
+[2018.10.29-15.03.48:254][616]LogShaderCompilers: Display: Shaders left to compile 36
+[2018.10.29-15.03.48:282][617]LogShaderCompilers: Display: Shaders left to compile 35
+[2018.10.29-15.03.48:555][626]LogShaderCompilers: Display: Shaders left to compile 34
+[2018.10.29-15.03.48:662][630]LogShaderCompilers: Display: Shaders left to compile 33
+[2018.10.29-15.03.48:684][631]LogShaderCompilers: Display: Shaders left to compile 32
+[2018.10.29-15.03.48:719][632]LogShaderCompilers: Display: Shaders left to compile 31
+[2018.10.29-15.03.48:903][640]LogShaderCompilers: Display: Shaders left to compile 30
+[2018.10.29-15.03.49:008][644]LogShaderCompilers: Display: Shaders left to compile 29
+[2018.10.29-15.03.49:033][645]LogShaderCompilers: Display: Shaders left to compile 28
+[2018.10.29-15.03.49:321][658]LogShaderCompilers: Display: Shaders left to compile 27
+[2018.10.29-15.03.49:395][661]LogShaderCompilers: Display: Shaders left to compile 26
+[2018.10.29-15.03.49:480][665]LogShaderCompilers: Display: Shaders left to compile 25
+[2018.10.29-15.03.49:620][671]LogShaderCompilers: Display: Shaders left to compile 24
+[2018.10.29-15.03.49:818][678]LogShaderCompilers: Display: Shaders left to compile 23
+[2018.10.29-15.03.49:988][684]LogShaderCompilers: Display: Shaders left to compile 22
+[2018.10.29-15.03.50:213][692]LogShaderCompilers: Display: Shaders left to compile 21
+[2018.10.29-15.03.50:213][692]LogShaderCompilers: Display: Shaders left to compile 20
+[2018.10.29-15.03.50:317][696]LogShaderCompilers: Display: Shaders left to compile 19
+[2018.10.29-15.03.50:318][696]MaterialEditorStats: Base pass shader: 98 instructions
+[2018.10.29-15.03.50:318][696]MaterialEditorStats: Base pass shader with Volumetric Lightmap: 98 instructions
+[2018.10.29-15.03.50:318][696]MaterialEditorStats: Vertex shader: 34 instructions
+[2018.10.29-15.03.50:318][696]MaterialEditorStats: Texture samplers: 2/16
+[2018.10.29-15.03.50:531][703]LogShaderCompilers: Display: Shaders left to compile 18
+[2018.10.29-15.03.50:559][704]LogShaderCompilers: Display: Shaders left to compile 17
+[2018.10.29-15.03.50:817][714]LogShaderCompilers: Display: Shaders left to compile 16
+[2018.10.29-15.03.50:867][716]LogShaderCompilers: Display: Shaders left to compile 15
+[2018.10.29-15.03.50:936][719]LogShaderCompilers: Display: Shaders left to compile 14
+[2018.10.29-15.03.51:066][724]LogShaderCompilers: Display: Shaders left to compile 13
+[2018.10.29-15.03.51:246][730]LogShaderCompilers: Display: Shaders left to compile 12
+[2018.10.29-15.03.51:346][733]LogShaderCompilers: Display: Shaders left to compile 11
+[2018.10.29-15.03.51:421][736]LogShaderCompilers: Display: Shaders left to compile 10
+[2018.10.29-15.03.51:448][737]LogShaderCompilers: Display: Shaders left to compile 9
+[2018.10.29-15.03.51:710][747]LogShaderCompilers: Display: Shaders left to compile 8
+[2018.10.29-15.03.51:760][749]LogShaderCompilers: Display: Shaders left to compile 7
+[2018.10.29-15.03.51:830][752]LogShaderCompilers: Display: Shaders left to compile 6
+[2018.10.29-15.03.51:898][755]LogShaderCompilers: Display: Shaders left to compile 5
+[2018.10.29-15.03.52:169][765]LogShaderCompilers: Display: Shaders left to compile 4
+[2018.10.29-15.03.52:197][766]LogShaderCompilers: Display: Shaders left to compile 3
+[2018.10.29-15.03.52:292][770]LogShaderCompilers: Display: Shaders left to compile 2
+[2018.10.29-15.03.52:318][771]LogShaderCompilers: Display: Shaders left to compile 1
+[2018.10.29-15.03.53:334][818]LogMaterial: Missing cached shader map for material Landscape_Material, compiling. 
+[2018.10.29-15.03.53:462][819]LogShaderCompilers: Display: Shaders left to compile 16
+[2018.10.29-15.03.53:462][819]LogShaderCompilers: Display: Shaders left to compile 15
+[2018.10.29-15.03.53:462][819]LogShaderCompilers: Display: Shaders left to compile 14
+[2018.10.29-15.03.53:462][819]LogShaderCompilers: Display: Shaders left to compile 13
+[2018.10.29-15.03.53:682][827]LogShaderCompilers: Display: Shaders left to compile 12
+[2018.10.29-15.03.53:709][828]LogShaderCompilers: Display: Shaders left to compile 11
+[2018.10.29-15.03.53:727][829]LogShaderCompilers: Display: Shaders left to compile 10
+[2018.10.29-15.03.53:727][829]LogShaderCompilers: Display: Shaders left to compile 9
+[2018.10.29-15.03.54:018][842]LogShaderCompilers: Display: Shaders left to compile 8
+[2018.10.29-15.03.54:045][843]LogShaderCompilers: Display: Shaders left to compile 7
+[2018.10.29-15.03.54:066][844]LogShaderCompilers: Display: Shaders left to compile 6
+[2018.10.29-15.03.54:323][853]LogShaderCompilers: Display: Shaders left to compile 5
+[2018.10.29-15.03.54:421][856]LogShaderCompilers: Display: Shaders left to compile 4
+[2018.10.29-15.03.54:600][863]LogShaderCompilers: Display: Shaders left to compile 3
+[2018.10.29-15.03.54:651][865]LogShaderCompilers: Display: Shaders left to compile 2
+[2018.10.29-15.03.54:801][871]LogShaderCompilers: Display: Shaders left to compile 1
+[2018.10.29-15.03.55:181][886]MaterialEditorStats: Base pass shader: 98 instructions
+[2018.10.29-15.03.55:181][886]MaterialEditorStats: Base pass shader with Volumetric Lightmap: 98 instructions
+[2018.10.29-15.03.55:181][886]MaterialEditorStats: Vertex shader: 34 instructions
+[2018.10.29-15.03.55:181][886]MaterialEditorStats: Texture samplers: 2/16
+[2018.10.29-15.04.05:518][486]LogMaterial: Missing cached shader map for material Landscape_Material, compiling. 
+[2018.10.29-15.04.05:529][486]LogShaderCompilers: Display: Shaders left to compile 16
+[2018.10.29-15.04.05:529][486]LogShaderCompilers: Display: Shaders left to compile 15
+[2018.10.29-15.04.05:529][486]LogShaderCompilers: Display: Shaders left to compile 14
+[2018.10.29-15.04.05:529][486]LogShaderCompilers: Display: Shaders left to compile 13
+[2018.10.29-15.04.05:569][486]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_3, compiling. 
+[2018.10.29-15.04.05:835][495]LogShaderCompilers: Display: Shaders left to compile 14
+[2018.10.29-15.04.05:862][496]LogShaderCompilers: Display: Shaders left to compile 13
+[2018.10.29-15.04.05:885][497]LogShaderCompilers: Display: Shaders left to compile 12
+[2018.10.29-15.04.05:885][497]LogShaderCompilers: Display: Shaders left to compile 11
+[2018.10.29-15.04.06:131][507]LogShaderCompilers: Display: Shaders left to compile 10
+[2018.10.29-15.04.06:153][508]LogShaderCompilers: Display: Shaders left to compile 9
+[2018.10.29-15.04.06:173][509]LogShaderCompilers: Display: Shaders left to compile 8
+[2018.10.29-15.04.06:372][518]LogShaderCompilers: Display: Shaders left to compile 7
+[2018.10.29-15.04.06:492][523]LogShaderCompilers: Display: Shaders left to compile 6
+[2018.10.29-15.04.06:651][530]LogShaderCompilers: Display: Shaders left to compile 5
+[2018.10.29-15.04.06:695][532]LogShaderCompilers: Display: Shaders left to compile 4
+[2018.10.29-15.04.06:797][537]LogShaderCompilers: Display: Shaders left to compile 3
+[2018.10.29-15.04.06:877][541]LogShaderCompilers: Display: Shaders left to compile 2
+[2018.10.29-15.04.06:973][545]LogMaterial: Missing cached shader map for material Landscape_Material, compiling. 
+[2018.10.29-15.04.07:109][549]LogShaderCompilers: Display: Shaders left to compile 17
+[2018.10.29-15.04.07:135][550]LogShaderCompilers: Display: Shaders left to compile 16
+[2018.10.29-15.04.07:184][552]LogShaderCompilers: Display: Shaders left to compile 15
+[2018.10.29-15.04.07:336][558]LogShaderCompilers: Display: Shaders left to compile 14
+[2018.10.29-15.04.07:518][565]LogShaderCompilers: Display: Shaders left to compile 13
+[2018.10.29-15.04.07:547][566]LogShaderCompilers: Display: Shaders left to compile 12
+[2018.10.29-15.04.07:566][567]LogShaderCompilers: Display: Shaders left to compile 11
+[2018.10.29-15.04.07:713][573]LogShaderCompilers: Display: Shaders left to compile 10
+[2018.10.29-15.04.07:866][579]LogShaderCompilers: Display: Shaders left to compile 9
+[2018.10.29-15.04.07:889][580]LogShaderCompilers: Display: Shaders left to compile 8
+[2018.10.29-15.04.07:889][580]LogShaderCompilers: Display: Shaders left to compile 7
+[2018.10.29-15.04.07:978][584]LogShaderCompilers: Display: Shaders left to compile 6
+[2018.10.29-15.04.08:270][596]LogShaderCompilers: Display: Shaders left to compile 5
+[2018.10.29-15.04.08:430][603]LogShaderCompilers: Display: Shaders left to compile 4
+[2018.10.29-15.04.08:471][605]LogShaderCompilers: Display: Shaders left to compile 3
+[2018.10.29-15.04.08:544][608]LogShaderCompilers: Display: Shaders left to compile 2
+[2018.10.29-15.04.08:787][617]LogShaderCompilers: Display: Shaders left to compile 1
+[2018.10.29-15.04.09:862][677]MaterialEditorStats: Base pass shader: 98 instructions
+[2018.10.29-15.04.09:862][677]MaterialEditorStats: Base pass shader with Volumetric Lightmap: 98 instructions
+[2018.10.29-15.04.09:862][677]MaterialEditorStats: Vertex shader: 34 instructions
+[2018.10.29-15.04.09:862][677]MaterialEditorStats: Texture samplers: 2/16
+[2018.10.29-15.04.12:364][781]LogMaterial: Missing cached shader map for material Landscape_Material, compiling. 
+[2018.10.29-15.04.12:433][782]LogShaderCompilers: Display: Shaders left to compile 16
+[2018.10.29-15.04.12:433][782]LogShaderCompilers: Display: Shaders left to compile 15
+[2018.10.29-15.04.12:433][782]LogShaderCompilers: Display: Shaders left to compile 14
+[2018.10.29-15.04.12:433][782]LogShaderCompilers: Display: Shaders left to compile 13
+[2018.10.29-15.04.12:683][791]LogShaderCompilers: Display: Shaders left to compile 12
+[2018.10.29-15.04.12:708][792]LogShaderCompilers: Display: Shaders left to compile 11
+[2018.10.29-15.04.12:721][792]LogShaderCompilers: Display: Shaders left to compile 10
+[2018.10.29-15.04.12:742][793]LogShaderCompilers: Display: Shaders left to compile 9
+[2018.10.29-15.04.12:958][799]LogShaderCompilers: Display: Shaders left to compile 8
+[2018.10.29-15.04.12:980][800]LogShaderCompilers: Display: Shaders left to compile 7
+[2018.10.29-15.04.12:986][800]LogShaderCompilers: Display: Shaders left to compile 6
+[2018.10.29-15.04.13:221][805]LogShaderCompilers: Display: Shaders left to compile 5
+[2018.10.29-15.04.13:271][807]LogShaderCompilers: Display: Shaders left to compile 4
+[2018.10.29-15.04.13:477][816]LogShaderCompilers: Display: Shaders left to compile 3
+[2018.10.29-15.04.13:493][817]LogShaderCompilers: Display: Shaders left to compile 2
+[2018.10.29-15.04.13:614][823]LogShaderCompilers: Display: Shaders left to compile 1
+[2018.10.29-15.04.13:984][839]LogMaterial: Missing cached shader map for material Landscape_Material, compiling. 
+[2018.10.29-15.04.14:008][840]LogShaderCompilers: Display: Shaders left to compile 16
+[2018.10.29-15.04.14:008][840]LogShaderCompilers: Display: Shaders left to compile 15
+[2018.10.29-15.04.14:008][840]LogShaderCompilers: Display: Shaders left to compile 14
+[2018.10.29-15.04.14:008][840]LogShaderCompilers: Display: Shaders left to compile 13
+[2018.10.29-15.04.14:328][850]LogShaderCompilers: Display: Shaders left to compile 12
+[2018.10.29-15.04.14:333][850]LogShaderCompilers: Display: Shaders left to compile 11
+[2018.10.29-15.04.14:366][851]LogShaderCompilers: Display: Shaders left to compile 10
+[2018.10.29-15.04.14:378][851]LogShaderCompilers: Display: Shaders left to compile 9
+[2018.10.29-15.04.14:563][856]LogShaderCompilers: Display: Shaders left to compile 8
+[2018.10.29-15.04.14:628][858]LogShaderCompilers: Display: Shaders left to compile 7
+[2018.10.29-15.04.14:628][858]LogShaderCompilers: Display: Shaders left to compile 6
+[2018.10.29-15.04.14:858][864]LogShaderCompilers: Display: Shaders left to compile 5
+[2018.10.29-15.04.14:938][866]LogShaderCompilers: Display: Shaders left to compile 4
+[2018.10.29-15.04.15:056][869]LogShaderCompilers: Display: Shaders left to compile 3
+[2018.10.29-15.04.15:157][873]LogShaderCompilers: Display: Shaders left to compile 2
+[2018.10.29-15.04.15:280][879]LogShaderCompilers: Display: Shaders left to compile 1
+[2018.10.29-15.04.15:653][892]MaterialEditorStats: Base pass shader: 98 instructions
+[2018.10.29-15.04.15:653][892]MaterialEditorStats: Base pass shader with Volumetric Lightmap: 98 instructions
+[2018.10.29-15.04.15:653][892]MaterialEditorStats: Vertex shader: 34 instructions
+[2018.10.29-15.04.15:653][892]MaterialEditorStats: Texture samplers: 2/16
+[2018.10.29-15.04.19:184][ 33]LogMaterial: Missing cached shader map for material Landscape_Material, compiling. 
+[2018.10.29-15.04.19:193][ 33]LogMaterial: Missing cached shader map for material Landscape_Material, compiling. 
+[2018.10.29-15.04.19:218][ 34]LogShaderCompilers: Display: Shaders left to compile 16
+[2018.10.29-15.04.19:218][ 34]LogShaderCompilers: Display: Shaders left to compile 15
+[2018.10.29-15.04.19:218][ 34]LogShaderCompilers: Display: Shaders left to compile 14
+[2018.10.29-15.04.19:218][ 34]LogShaderCompilers: Display: Shaders left to compile 13
+[2018.10.29-15.04.19:522][ 42]LogShaderCompilers: Display: Shaders left to compile 12
+[2018.10.29-15.04.19:539][ 43]LogShaderCompilers: Display: Shaders left to compile 11
+[2018.10.29-15.04.19:541][ 43]LogShaderCompilers: Display: Shaders left to compile 10
+[2018.10.29-15.04.19:541][ 43]LogShaderCompilers: Display: Shaders left to compile 9
+[2018.10.29-15.04.19:768][ 49]LogShaderCompilers: Display: Shaders left to compile 8
+[2018.10.29-15.04.19:799][ 50]LogShaderCompilers: Display: Shaders left to compile 7
+[2018.10.29-15.04.19:807][ 50]LogShaderCompilers: Display: Shaders left to compile 6
+[2018.10.29-15.04.20:030][ 56]LogShaderCompilers: Display: Shaders left to compile 5
+[2018.10.29-15.04.20:135][ 59]LogShaderCompilers: Display: Shaders left to compile 4
+[2018.10.29-15.04.20:265][ 62]LogShaderCompilers: Display: Shaders left to compile 3
+[2018.10.29-15.04.20:335][ 64]LogShaderCompilers: Display: Shaders left to compile 2
+[2018.10.29-15.04.20:469][ 68]LogShaderCompilers: Display: Shaders left to compile 1
+[2018.10.29-15.04.20:576][ 72]LogMaterialEditor: Saving and Compiling material Landscape_Material
+[2018.10.29-15.04.24:618][ 72]LogMaterial: Missing cached shader map for material Landscape_Material, compiling. 
+[2018.10.29-15.04.24:683][ 72]LogShaderCompilers: Display: Shaders left to compile 16
+[2018.10.29-15.04.24:683][ 72]LogShaderCompilers: Display: Shaders left to compile 15
+[2018.10.29-15.04.24:683][ 72]LogShaderCompilers: Display: Shaders left to compile 14
+[2018.10.29-15.04.24:683][ 72]LogShaderCompilers: Display: Shaders left to compile 13
+[2018.10.29-15.04.24:738][ 72]LogMaterial: Missing cached shader map for material Landscape_Material, compiling. 
+[2018.10.29-15.04.24:771][ 72]LogMaterial: Missing cached shader map for material Landscape_Material, compiling. 
+[2018.10.29-15.04.24:786][ 72]LogMaterial: Missing cached shader map for material Landscape_Material, compiling. 
+[2018.10.29-15.04.24:794][ 72]LogMaterial: Missing cached shader map for material Landscape_Material, compiling. 
+[2018.10.29-15.04.24:801][ 72]LogMaterial: Missing cached shader map for material Landscape_Material, compiling. 
+[2018.10.29-15.04.24:835][ 72]LogMaterial: Missing cached shader map for material Landscape_Material, compiling. 
+[2018.10.29-15.04.24:884][ 72]LogMaterial: Missing cached shader map for material Landscape_Material, compiling. 
+[2018.10.29-15.04.24:904][ 72]LogMaterial: Missing cached shader map for material Landscape_Material, compiling. 
+[2018.10.29-15.04.24:933][ 72]LogMaterial: Missing cached shader map for material Landscape_Material, compiling. 
+[2018.10.29-15.04.24:971][ 72]LogShaderCompilers: Display: Shaders left to compile 184
+[2018.10.29-15.04.24:971][ 72]LogShaderCompilers: Display: Shaders left to compile 225
+[2018.10.29-15.04.24:972][ 72]LogShaderCompilers: Display: Shaders left to compile 224
+[2018.10.29-15.04.25:010][ 72]LogShaderCompilers: Display: Shaders left to compile 223
+[2018.10.29-15.04.25:010][ 72]LogMaterial: Missing cached shader map for material FDebugViewModeMaterialProxy Landscape_Material, compiling. 
+[2018.10.29-15.04.25:848][ 72]LogShaderCompilers: Display: Shaders left to compile 223
+[2018.10.29-15.04.25:848][ 72]LogShaderCompilers: Display: Shaders left to compile 222
+[2018.10.29-15.04.25:848][ 72]LogShaderCompilers: Display: Shaders left to compile 221
+[2018.10.29-15.04.25:848][ 72]LogShaderCompilers: Display: Shaders left to compile 220
+[2018.10.29-15.04.25:848][ 72]LogShaderCompilers: Display: Shaders left to compile 219
+[2018.10.29-15.04.25:849][ 72]LogShaderCompilers: Display: Shaders left to compile 218
+[2018.10.29-15.04.25:849][ 72]LogShaderCompilers: Display: Shaders left to compile 217
+[2018.10.29-15.04.25:849][ 72]LogShaderCompilers: Display: Shaders left to compile 216
+[2018.10.29-15.04.25:849][ 72]LogShaderCompilers: Display: Shaders left to compile 215
+[2018.10.29-15.04.25:849][ 72]LogShaderCompilers: Display: Shaders left to compile 214
+[2018.10.29-15.04.25:849][ 72]LogShaderCompilers: Display: Shaders left to compile 204
+[2018.10.29-15.04.25:849][ 72]LogShaderCompilers: Display: Shaders left to compile 194
+[2018.10.29-15.04.25:849][ 72]LogShaderCompilers: Display: Shaders left to compile 184
+[2018.10.29-15.04.25:856][ 72]TextureStreamingBuild: Display: Compiling optional shaders took 0.883 seconds.
+[2018.10.29-15.04.28:639][ 72]LogShaderCompilers: Display: Shaders left to compile 174
+[2018.10.29-15.04.28:639][ 72]LogShaderCompilers: Display: Shaders left to compile 164
+[2018.10.29-15.04.28:639][ 72]LogShaderCompilers: Display: Shaders left to compile 154
+[2018.10.29-15.04.28:670][ 72]LogMaterial: Missing cached shader map for material Landscape_Material, compiling. 
+[2018.10.29-15.04.28:695][ 72]LogShaderCompilers: Display: Shaders left to compile 152
+[2018.10.29-15.04.29:014][ 72]LogSavePackage: Save=71.25ms
+[2018.10.29-15.04.29:014][ 72]LogSavePackage: Moving '../../../../../Documents/GitHub/CabinInTheForest/PhotogrammetryScene/Saved/Landscape_Material28E829A142B58D17D144FA89DCD4496F.tmp' to '../../../../../Documents/GitHub/CabinInTheForest/PhotogrammetryScene/Content/Assets/Terrain/Landscape_Material.uasset'
+[2018.10.29-15.04.29:025][ 72]LogSavePackage: Display: Finished SavePackage ../../../../../Documents/GitHub/CabinInTheForest/PhotogrammetryScene/Content/Assets/Terrain/Landscape_Material.uasset
+[2018.10.29-15.04.29:034][ 72]MaterialEditorStats: Base pass shader: 98 instructions
+[2018.10.29-15.04.29:034][ 72]MaterialEditorStats: Base pass shader with Volumetric Lightmap: 98 instructions
+[2018.10.29-15.04.29:034][ 72]MaterialEditorStats: Vertex shader: 34 instructions
+[2018.10.29-15.04.29:034][ 72]MaterialEditorStats: Texture samplers: 2/16
+[2018.10.29-15.04.31:224][137]LogShaderCompilers: Display: Shaders left to compile 142
+[2018.10.29-15.04.32:942][183]LogShaderCompilers: Display: Shaders left to compile 132
+[2018.10.29-15.04.32:952][183]LogShaderCompilers: Display: Shaders left to compile 122
+[2018.10.29-15.04.33:063][186]LogShaderCompilers: Display: Shaders left to compile 112
+[2018.10.29-15.04.36:015][266]LogShaderCompilers: Display: Shaders left to compile 102
+[2018.10.29-15.04.36:960][291]LogShaderCompilers: Display: Shaders left to compile 92
+[2018.10.29-15.04.37:078][294]LogShaderCompilers: Display: Shaders left to compile 82
+[2018.10.29-15.04.37:972][317]LogShaderCompilers: Display: Shaders left to compile 72
+[2018.10.29-15.04.40:554][380]LogShaderCompilers: Display: Shaders left to compile 62
+[2018.10.29-15.04.41:063][392]LogShaderCompilers: Display: Shaders left to compile 52
+[2018.10.29-15.04.41:343][399]LogShaderCompilers: Display: Shaders left to compile 42
+[2018.10.29-15.04.42:722][431]LogShaderCompilers: Display: Shaders left to compile 32
+[2018.10.29-15.04.44:706][471]LogShaderCompilers: Display: Shaders left to compile 22
+[2018.10.29-15.04.45:625][489]LogShaderCompilers: Display: Shaders left to compile 12
+[2018.10.29-15.04.46:374][504]LogShaderCompilers: Display: Shaders left to compile 2
+[2018.10.29-15.04.50:561][585]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.10.29-15.04.52:083][658]LogMaterial: Missing cached shader map for material Landscape_Material, compiling. 
+[2018.10.29-15.04.52:094][658]LogMaterial: Missing cached shader map for material Landscape_Material, compiling. 
+[2018.10.29-15.04.52:115][659]LogShaderCompilers: Display: Shaders left to compile 16
+[2018.10.29-15.04.52:115][659]LogShaderCompilers: Display: Shaders left to compile 15
+[2018.10.29-15.04.52:115][659]LogShaderCompilers: Display: Shaders left to compile 14
+[2018.10.29-15.04.52:115][659]LogShaderCompilers: Display: Shaders left to compile 13
+[2018.10.29-15.04.52:392][663]LogShaderCompilers: Display: Shaders left to compile 12
+[2018.10.29-15.04.52:403][663]LogShaderCompilers: Display: Shaders left to compile 11
+[2018.10.29-15.04.52:430][664]LogShaderCompilers: Display: Shaders left to compile 10
+[2018.10.29-15.04.52:430][664]LogShaderCompilers: Display: Shaders left to compile 9
+[2018.10.29-15.04.52:639][670]LogShaderCompilers: Display: Shaders left to compile 8
+[2018.10.29-15.04.52:664][671]LogShaderCompilers: Display: Shaders left to compile 7
+[2018.10.29-15.04.52:715][672]LogShaderCompilers: Display: Shaders left to compile 6
+[2018.10.29-15.04.52:888][673]LogShaderCompilers: Display: Shaders left to compile 5
+[2018.10.29-15.04.52:969][677]LogShaderCompilers: Display: Shaders left to compile 4
+[2018.10.29-15.04.53:116][680]LogShaderCompilers: Display: Shaders left to compile 3
+[2018.10.29-15.04.53:170][681]LogShaderCompilers: Display: Shaders left to compile 2
+[2018.10.29-15.04.53:227][682]LogMaterialEditor: Saving and Compiling material Landscape_Material
+[2018.10.29-15.04.55:524][682]LogShaderCompilers: Display: Shaders left to compile 1
+[2018.10.29-15.04.55:539][682]LogMaterial: Missing cached shader map for material Landscape_Material, compiling. 
+[2018.10.29-15.04.55:573][682]LogShaderCompilers: Display: Shaders left to compile 16
+[2018.10.29-15.04.55:573][682]LogShaderCompilers: Display: Shaders left to compile 15
+[2018.10.29-15.04.55:573][682]LogShaderCompilers: Display: Shaders left to compile 14
+[2018.10.29-15.04.55:573][682]LogShaderCompilers: Display: Shaders left to compile 13
+[2018.10.29-15.04.55:606][682]LogMaterial: Missing cached shader map for material Landscape_Material, compiling. 
+[2018.10.29-15.04.55:631][682]LogMaterial: Missing cached shader map for material Landscape_Material, compiling. 
+[2018.10.29-15.04.55:647][682]LogMaterial: Missing cached shader map for material Landscape_Material, compiling. 
+[2018.10.29-15.04.55:657][682]LogMaterial: Missing cached shader map for material Landscape_Material, compiling. 
+[2018.10.29-15.04.55:669][682]LogMaterial: Missing cached shader map for material Landscape_Material, compiling. 
+[2018.10.29-15.04.55:680][682]LogMaterial: Missing cached shader map for material Landscape_Material, compiling. 
+[2018.10.29-15.04.55:734][682]LogMaterial: Missing cached shader map for material Landscape_Material, compiling. 
+[2018.10.29-15.04.55:756][682]LogMaterial: Missing cached shader map for material Landscape_Material, compiling. 
+[2018.10.29-15.04.55:781][682]LogMaterial: Missing cached shader map for material Landscape_Material, compiling. 
+[2018.10.29-15.04.55:817][682]LogShaderCompilers: Display: Shaders left to compile 226
+[2018.10.29-15.04.55:824][682]LogMaterial: Missing cached shader map for material FDebugViewModeMaterialProxy Landscape_Material, compiling. 
+[2018.10.29-15.04.56:703][682]LogShaderCompilers: Display: Shaders left to compile 225
+[2018.10.29-15.04.56:704][682]LogShaderCompilers: Display: Shaders left to compile 225
+[2018.10.29-15.04.56:704][682]LogShaderCompilers: Display: Shaders left to compile 224
+[2018.10.29-15.04.56:704][682]LogShaderCompilers: Display: Shaders left to compile 223
+[2018.10.29-15.04.56:704][682]LogShaderCompilers: Display: Shaders left to compile 222
+[2018.10.29-15.04.56:704][682]LogShaderCompilers: Display: Shaders left to compile 221
+[2018.10.29-15.04.56:704][682]LogShaderCompilers: Display: Shaders left to compile 220
+[2018.10.29-15.04.56:704][682]LogShaderCompilers: Display: Shaders left to compile 219
+[2018.10.29-15.04.56:704][682]LogShaderCompilers: Display: Shaders left to compile 218
+[2018.10.29-15.04.56:704][682]LogShaderCompilers: Display: Shaders left to compile 217
+[2018.10.29-15.04.56:704][682]LogShaderCompilers: Display: Shaders left to compile 216
+[2018.10.29-15.04.56:704][682]LogShaderCompilers: Display: Shaders left to compile 215
+[2018.10.29-15.04.56:704][682]LogShaderCompilers: Display: Shaders left to compile 214
+[2018.10.29-15.04.56:704][682]LogShaderCompilers: Display: Shaders left to compile 204
+[2018.10.29-15.04.56:714][682]TextureStreamingBuild: Display: Compiling optional shaders took 0.896 seconds.
+[2018.10.29-15.04.56:730][682]LogShaderCompilers: Display: Shaders left to compile 194
+[2018.10.29-15.04.56:730][682]LogShaderCompilers: Display: Shaders left to compile 184
+[2018.10.29-15.04.59:515][682]LogShaderCompilers: Display: Shaders left to compile 174
+[2018.10.29-15.04.59:515][682]LogShaderCompilers: Display: Shaders left to compile 164
+[2018.10.29-15.04.59:515][682]LogShaderCompilers: Display: Shaders left to compile 154
+[2018.10.29-15.04.59:515][682]LogShaderCompilers: Display: Shaders left to compile 144
+[2018.10.29-15.04.59:556][682]LogMaterial: Missing cached shader map for material Landscape_Material, compiling. 
+[2018.10.29-15.04.59:796][682]LogSavePackage: Save=35.34ms
+[2018.10.29-15.04.59:796][682]LogSavePackage: Moving '../../../../../Documents/GitHub/CabinInTheForest/PhotogrammetryScene/Saved/Landscape_Material3EF89948417C62D8E84E45AB9EB6C761.tmp' to '../../../../../Documents/GitHub/CabinInTheForest/PhotogrammetryScene/Content/Assets/Terrain/Landscape_Material.uasset'
+[2018.10.29-15.04.59:803][682]LogSavePackage: Display: Finished SavePackage ../../../../../Documents/GitHub/CabinInTheForest/PhotogrammetryScene/Content/Assets/Terrain/Landscape_Material.uasset
+[2018.10.29-15.04.59:818][682]MaterialEditorStats: Base pass shader: 98 instructions
+[2018.10.29-15.04.59:818][682]MaterialEditorStats: Base pass shader with Volumetric Lightmap: 98 instructions
+[2018.10.29-15.04.59:818][682]MaterialEditorStats: Vertex shader: 34 instructions
+[2018.10.29-15.04.59:818][682]MaterialEditorStats: Texture samplers: 2/16
+[2018.10.29-15.05.02:129][748]LogShaderCompilers: Display: Shaders left to compile 142
+[2018.10.29-15.05.03:509][776]LogShaderCompilers: Display: Shaders left to compile 132
+[2018.10.29-15.05.03:659][779]LogShaderCompilers: Display: Shaders left to compile 122
+[2018.10.29-15.05.03:674][779]LogShaderCompilers: Display: Shaders left to compile 112
+[2018.10.29-15.05.06:622][840]LogShaderCompilers: Display: Shaders left to compile 102
+[2018.10.29-15.05.07:224][852]LogShaderCompilers: Display: Shaders left to compile 92
+[2018.10.29-15.05.07:238][852]LogShaderCompilers: Display: Shaders left to compile 82
+[2018.10.29-15.05.08:326][874]LogShaderCompilers: Display: Shaders left to compile 72
+[2018.10.29-15.05.10:413][916]LogShaderCompilers: Display: Shaders left to compile 62
+[2018.10.29-15.05.11:151][931]LogShaderCompilers: Display: Shaders left to compile 52
+[2018.10.29-15.05.11:309][934]LogShaderCompilers: Display: Shaders left to compile 42
+[2018.10.29-15.05.11:923][946]LogShaderCompilers: Display: Shaders left to compile 32
+[2018.10.29-15.05.14:474][997]LogShaderCompilers: Display: Shaders left to compile 22
+[2018.10.29-15.05.15:154][  8]LogShaderCompilers: Display: Shaders left to compile 12
+[2018.10.29-15.05.15:319][ 12]LogShaderCompilers: Display: Shaders left to compile 2
+[2018.10.29-15.05.22:885][161]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.10.29-15.05.24:760][258]LogMaterial: Missing cached shader map for material Landscape_Material, compiling. 
+[2018.10.29-15.05.24:781][258]LogMaterial: Missing cached shader map for material Landscape_Material, compiling. 
+[2018.10.29-15.05.24:807][259]LogShaderCompilers: Display: Shaders left to compile 16
+[2018.10.29-15.05.24:808][259]LogShaderCompilers: Display: Shaders left to compile 15
+[2018.10.29-15.05.24:808][259]LogShaderCompilers: Display: Shaders left to compile 14
+[2018.10.29-15.05.24:808][259]LogShaderCompilers: Display: Shaders left to compile 13
+[2018.10.29-15.05.25:096][264]LogShaderCompilers: Display: Shaders left to compile 12
+[2018.10.29-15.05.25:120][264]LogShaderCompilers: Display: Shaders left to compile 11
+[2018.10.29-15.05.25:130][264]LogShaderCompilers: Display: Shaders left to compile 10
+[2018.10.29-15.05.25:163][265]LogShaderCompilers: Display: Shaders left to compile 9
+[2018.10.29-15.05.25:344][270]LogShaderCompilers: Display: Shaders left to compile 8
+[2018.10.29-15.05.25:396][270]LogShaderCompilers: Display: Shaders left to compile 7
+[2018.10.29-15.05.25:396][270]LogShaderCompilers: Display: Shaders left to compile 6
+[2018.10.29-15.05.25:621][276]LogShaderCompilers: Display: Shaders left to compile 5
+[2018.10.29-15.05.25:712][278]LogShaderCompilers: Display: Shaders left to compile 4
+[2018.10.29-15.05.25:855][281]LogShaderCompilers: Display: Shaders left to compile 3
+[2018.10.29-15.05.25:898][282]LogMaterialEditor: Saving and Compiling material Landscape_Material
+[2018.10.29-15.05.28:164][282]LogShaderCompilers: Display: Shaders left to compile 2
+[2018.10.29-15.05.28:164][282]LogShaderCompilers: Display: Shaders left to compile 1
+[2018.10.29-15.05.28:188][282]LogMaterial: Missing cached shader map for material Landscape_Material, compiling. 
+[2018.10.29-15.05.28:236][282]LogShaderCompilers: Display: Shaders left to compile 16
+[2018.10.29-15.05.28:236][282]LogShaderCompilers: Display: Shaders left to compile 15
+[2018.10.29-15.05.28:236][282]LogShaderCompilers: Display: Shaders left to compile 14
+[2018.10.29-15.05.28:236][282]LogShaderCompilers: Display: Shaders left to compile 13
+[2018.10.29-15.05.28:266][282]LogMaterial: Missing cached shader map for material Landscape_Material, compiling. 
+[2018.10.29-15.05.28:294][282]LogMaterial: Missing cached shader map for material Landscape_Material, compiling. 
+[2018.10.29-15.05.28:307][282]LogMaterial: Missing cached shader map for material Landscape_Material, compiling. 
+[2018.10.29-15.05.28:314][282]LogMaterial: Missing cached shader map for material Landscape_Material, compiling. 
+[2018.10.29-15.05.28:322][282]LogMaterial: Missing cached shader map for material Landscape_Material, compiling. 
+[2018.10.29-15.05.28:345][282]LogMaterial: Missing cached shader map for material Landscape_Material, compiling. 
+[2018.10.29-15.05.28:386][282]LogMaterial: Missing cached shader map for material Landscape_Material, compiling. 
+[2018.10.29-15.05.28:421][282]LogMaterial: Missing cached shader map for material Landscape_Material, compiling. 
+[2018.10.29-15.05.28:448][282]LogMaterial: Missing cached shader map for material Landscape_Material, compiling. 
+[2018.10.29-15.05.28:490][282]LogMaterial: Missing cached shader map for material FDebugViewModeMaterialProxy Landscape_Material, compiling. 
+[2018.10.29-15.05.29:412][282]LogShaderCompilers: Display: Shaders left to compile 226
+[2018.10.29-15.05.29:412][282]LogShaderCompilers: Display: Shaders left to compile 226
+[2018.10.29-15.05.29:412][282]LogShaderCompilers: Display: Shaders left to compile 225
+[2018.10.29-15.05.29:412][282]LogShaderCompilers: Display: Shaders left to compile 224
+[2018.10.29-15.05.29:412][282]LogShaderCompilers: Display: Shaders left to compile 223
+[2018.10.29-15.05.29:412][282]LogShaderCompilers: Display: Shaders left to compile 222
+[2018.10.29-15.05.29:412][282]LogShaderCompilers: Display: Shaders left to compile 221
+[2018.10.29-15.05.29:412][282]LogShaderCompilers: Display: Shaders left to compile 220
+[2018.10.29-15.05.29:412][282]LogShaderCompilers: Display: Shaders left to compile 219
+[2018.10.29-15.05.29:412][282]LogShaderCompilers: Display: Shaders left to compile 218
+[2018.10.29-15.05.29:412][282]LogShaderCompilers: Display: Shaders left to compile 217
+[2018.10.29-15.05.29:412][282]LogShaderCompilers: Display: Shaders left to compile 216
+[2018.10.29-15.05.29:413][282]LogShaderCompilers: Display: Shaders left to compile 215
+[2018.10.29-15.05.29:413][282]LogShaderCompilers: Display: Shaders left to compile 214
+[2018.10.29-15.05.29:413][282]LogShaderCompilers: Display: Shaders left to compile 204
+[2018.10.29-15.05.29:413][282]LogShaderCompilers: Display: Shaders left to compile 194
+[2018.10.29-15.05.29:423][282]TextureStreamingBuild: Display: Compiling optional shaders took 0.941 seconds.
+[2018.10.29-15.05.29:451][282]LogShaderCompilers: Display: Shaders left to compile 184
+[2018.10.29-15.05.32:873][282]LogShaderCompilers: Display: Shaders left to compile 174
+[2018.10.29-15.05.32:873][282]LogShaderCompilers: Display: Shaders left to compile 164
+[2018.10.29-15.05.32:873][282]LogShaderCompilers: Display: Shaders left to compile 154
+[2018.10.29-15.05.32:873][282]LogShaderCompilers: Display: Shaders left to compile 144
+[2018.10.29-15.05.32:876][282]LogMaterial: Missing cached shader map for material Landscape_Material, compiling. 
+[2018.10.29-15.05.33:145][282]LogSavePackage: Save=35.23ms
+[2018.10.29-15.05.33:145][282]LogSavePackage: Moving '../../../../../Documents/GitHub/CabinInTheForest/PhotogrammetryScene/Saved/Landscape_Material50EC26E8429CD01D4398268D00B0871B.tmp' to '../../../../../Documents/GitHub/CabinInTheForest/PhotogrammetryScene/Content/Assets/Terrain/Landscape_Material.uasset'
+[2018.10.29-15.05.33:154][282]LogSavePackage: Display: Finished SavePackage ../../../../../Documents/GitHub/CabinInTheForest/PhotogrammetryScene/Content/Assets/Terrain/Landscape_Material.uasset
+[2018.10.29-15.05.33:178][282]MaterialEditorStats: Base pass shader: 98 instructions
+[2018.10.29-15.05.33:178][282]MaterialEditorStats: Base pass shader with Volumetric Lightmap: 98 instructions
+[2018.10.29-15.05.33:178][282]MaterialEditorStats: Vertex shader: 34 instructions
+[2018.10.29-15.05.33:178][282]MaterialEditorStats: Texture samplers: 2/16
+[2018.10.29-15.05.34:967][289]LogShaderCompilers: Display: Shaders left to compile 142
+[2018.10.29-15.05.36:288][293]LogShaderCompilers: Display: Shaders left to compile 132
+[2018.10.29-15.05.36:288][293]LogShaderCompilers: Display: Shaders left to compile 122
+[2018.10.29-15.05.36:288][293]LogShaderCompilers: Display: Shaders left to compile 112
+[2018.10.29-15.05.38:311][299]LogShaderCompilers: Display: Shaders left to compile 102
+[2018.10.29-15.05.39:286][302]LogShaderCompilers: Display: Shaders left to compile 92
+[2018.10.29-15.05.39:286][302]LogShaderCompilers: Display: Shaders left to compile 82
+[2018.10.29-15.05.39:952][304]LogShaderCompilers: Display: Shaders left to compile 72
+[2018.10.29-15.05.41:624][309]LogShaderCompilers: Display: Shaders left to compile 62
+[2018.10.29-15.05.41:967][310]LogShaderCompilers: Display: Shaders left to compile 52
+[2018.10.29-15.05.42:298][311]LogShaderCompilers: Display: Shaders left to compile 42
+[2018.10.29-15.05.42:954][313]LogShaderCompilers: Display: Shaders left to compile 32
+[2018.10.29-15.05.44:288][317]LogShaderCompilers: Display: Shaders left to compile 22
+[2018.10.29-15.05.45:303][320]LogShaderCompilers: Display: Shaders left to compile 12
+[2018.10.29-15.05.45:620][321]LogShaderCompilers: Display: Shaders left to compile 2
+[2018.10.29-15.05.58:975][358]LogTexture: Display: Building textures: Texture2D_35 (BGRA8, 64X64)
+[2018.10.29-15.05.59:018][358]LogTexture: Display: Building textures: Texture2D_36 (BGRA8, 64X64)
+[2018.10.29-15.05.59:019][358]LogTexture: Display: Building textures: Texture2D_37 (BGRA8, 64X64)
+[2018.10.29-15.05.59:019][358]LogTexture: Display: Building textures: Texture2D_38 (BGRA8, 64X64)
+[2018.10.29-15.05.59:038][358]LogTexture: Display: Building textures: Texture2D_39 (BGRA8, 64X64)
+[2018.10.29-15.05.59:039][358]LogTexture: Display: Building textures: Texture2D_40 (BGRA8, 64X64)
+[2018.10.29-15.05.59:040][358]LogTexture: Display: Building textures: Texture2D_41 (BGRA8, 64X64)
+[2018.10.29-15.05.59:041][358]LogTexture: Display: Building textures: Texture2D_42 (BGRA8, 64X64)
+[2018.10.29-15.05.59:043][358]LogTexture: Display: Building textures: Texture2D_43 (BGRA8, 64X64)
+[2018.10.29-15.05.59:076][358]LogTexture: Display: Building textures: Texture2D_44 (BGRA8, 64X64)
+[2018.10.29-15.05.59:077][358]LogTexture: Display: Building textures: Texture2D_45 (BGRA8, 64X64)
+[2018.10.29-15.05.59:078][358]LogTexture: Display: Building textures: Texture2D_46 (BGRA8, 64X64)
+[2018.10.29-15.05.59:132][358]LogTexture: Display: Building textures: Texture2D_47 (BGRA8, 64X64)
+[2018.10.29-15.05.59:154][358]LogTexture: Display: Building textures: Texture2D_48 (BGRA8, 64X64)
+[2018.10.29-15.05.59:156][358]LogTexture: Display: Building textures: Texture2D_49 (BGRA8, 64X64)
+[2018.10.29-15.05.59:184][358]LogTexture: Display: Building textures: Texture2D_50 (BGRA8, 64X64)
+[2018.10.29-15.05.59:189][358]LogTexture: Display: Building textures: Texture2D_51 (BGRA8, 64X64)
+[2018.10.29-15.05.59:210][358]LogTexture: Display: Building textures: Texture2D_52 (BGRA8, 64X64)
+[2018.10.29-15.05.59:212][358]LogTexture: Display: Building textures: Texture2D_53 (BGRA8, 64X64)
+[2018.10.29-15.05.59:213][358]LogTexture: Display: Building textures: Texture2D_86 (BGRA8, 64X64)
+[2018.10.29-15.05.59:270][358]LogTexture: Display: Building textures: Texture2D_87 (BGRA8, 64X64)
+[2018.10.29-15.05.59:271][358]LogTexture: Display: Building textures: Texture2D_88 (BGRA8, 64X64)
+[2018.10.29-15.05.59:273][358]LogTexture: Display: Building textures: Texture2D_89 (BGRA8, 64X64)
+[2018.10.29-15.05.59:274][358]LogTexture: Display: Building textures: Texture2D_90 (BGRA8, 64X64)
+[2018.10.29-15.05.59:276][358]LogTexture: Display: Building textures: Texture2D_91 (BGRA8, 64X64)
+[2018.10.29-15.05.59:374][358]LogTexture: Display: Building textures: Texture2D_92 (BGRA8, 64X64)
+[2018.10.29-15.05.59:419][358]LogTexture: Display: Building textures: Texture2D_93 (BGRA8, 64X64)
+[2018.10.29-15.05.59:425][358]LogTexture: Display: Building textures: Texture2D_94 (BGRA8, 64X64)
+[2018.10.29-15.05.59:426][358]LogTexture: Display: Building textures: Texture2D_95 (BGRA8, 64X64)
+[2018.10.29-15.05.59:428][358]LogTexture: Display: Building textures: Texture2D_96 (BGRA8, 64X64)
+[2018.10.29-15.05.59:430][358]LogTexture: Display: Building textures: Texture2D_97 (BGRA8, 64X64)
+[2018.10.29-15.05.59:463][358]LogTexture: Display: Building textures: Texture2D_98 (BGRA8, 64X64)
+[2018.10.29-15.06.00:287][358]LogTexture: Display: Building textures: Texture2D_69 (BGRA8, 64X64)
+[2018.10.29-15.06.00:288][358]LogTexture: Display: Building textures: Texture2D_70 (BGRA8, 64X64)
+[2018.10.29-15.06.00:348][358]LogTexture: Display: Building textures: Texture2D_71 (BGRA8, 64X64)
+[2018.10.29-15.06.00:349][358]LogTexture: Display: Building textures: Texture2D_72 (BGRA8, 64X64)
+[2018.10.29-15.06.00:350][358]LogTexture: Display: Building textures: Texture2D_73 (BGRA8, 64X64)
+[2018.10.29-15.06.00:504][358]LogTexture: Display: Building textures: Texture2D_74 (BGRA8, 64X64)
+[2018.10.29-15.06.00:549][358]LogTexture: Display: Building textures: Texture2D_75 (BGRA8, 64X64)
+[2018.10.29-15.06.00:550][358]LogTexture: Display: Building textures: Texture2D_76 (BGRA8, 64X64)
+[2018.10.29-15.06.00:551][358]LogTexture: Display: Building textures: Texture2D_77 (BGRA8, 64X64)
+[2018.10.29-15.06.00:552][358]LogTexture: Display: Building textures: Texture2D_78 (BGRA8, 64X64)
+[2018.10.29-15.06.00:555][358]LogTexture: Display: Building textures: Texture2D_79 (BGRA8, 64X64)
+[2018.10.29-15.06.00:598][358]LogTexture: Display: Building textures: Texture2D_80 (BGRA8, 64X64)
+[2018.10.29-15.06.00:598][358]LogTexture: Display: Building textures: Texture2D_81 (BGRA8, 64X64)
+[2018.10.29-15.06.00:599][358]LogTexture: Display: Building textures: Texture2D_82 (BGRA8, 64X64)
+[2018.10.29-15.06.00:600][358]LogTexture: Display: Building textures: Texture2D_83 (BGRA8, 64X64)
+[2018.10.29-15.06.00:600][358]LogTexture: Display: Building textures: Texture2D_84 (BGRA8, 64X64)
+[2018.10.29-15.06.00:602][358]LogTexture: Display: Building textures: Texture2D_85 (BGRA8, 64X64)
+[2018.10.29-15.06.00:602][358]LogTexture: Display: Building textures: Texture2D_99 (BGRA8, 64X64)
+[2018.10.29-15.06.00:603][358]LogTexture: Display: Building textures: Texture2D_100 (BGRA8, 64X64)
+[2018.10.29-15.06.00:618][358]LogTexture: Display: Building textures: Texture2D_101 (BGRA8, 64X64)
+[2018.10.29-15.06.00:619][358]LogTexture: Display: Building textures: Texture2D_102 (BGRA8, 64X64)
+[2018.10.29-15.06.00:620][358]LogTexture: Display: Building textures: Texture2D_103 (BGRA8, 64X64)
+[2018.10.29-15.06.00:620][358]LogTexture: Display: Building textures: Texture2D_104 (BGRA8, 64X64)
+[2018.10.29-15.06.00:621][358]LogTexture: Display: Building textures: Texture2D_105 (BGRA8, 64X64)
+[2018.10.29-15.06.00:684][358]LogTexture: Display: Building textures: Texture2D_106 (BGRA8, 64X64)
+[2018.10.29-15.06.00:685][358]LogTexture: Display: Building textures: Texture2D_107 (BGRA8, 64X64)
+[2018.10.29-15.06.00:686][358]LogTexture: Display: Building textures: Texture2D_108 (BGRA8, 64X64)
+[2018.10.29-15.06.00:687][358]LogTexture: Display: Building textures: Texture2D_109 (BGRA8, 64X64)
+[2018.10.29-15.06.01:287][358]LogSavePackage: Save=2412.96ms
+[2018.10.29-15.06.01:287][358]LogSavePackage: Moving '../../../../../Documents/GitHub/CabinInTheForest/PhotogrammetryScene/Saved/Minimal_Default_Auto1853039DF4DA00364114F57A960FE5962.tmp' to '../../../../../Documents/GitHub/CabinInTheForest/PhotogrammetryScene/Saved/Autosaves/Game/StarterContent/Maps/Minimal_Default_Auto1.umap'
+[2018.10.29-15.06.01:290][358]LogSavePackage: Display: Finished SavePackage ../../../../../Documents/GitHub/CabinInTheForest/PhotogrammetryScene/Saved/Autosaves/Game/StarterContent/Maps/Minimal_Default_Auto1.umap
+[2018.10.29-15.06.01:415][358]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/StarterContent/Maps/Minimal_Default' took 2.935
+[2018.10.29-15.06.01:415][358]LogFileHelpers: Editor autosave (incl. sublevels) for all levels took 2.935
+[2018.10.29-15.06.46:193][362]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.10.29-15.07.02:452][815]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.10.29-15.07.07:778][982]Cmd: TRANSACTION UNDO
+[2018.10.29-15.07.07:778][982]LogEditorTransaction: Undo Landscape Editing: Paint
+[2018.10.29-15.07.07:935][982]LogMaterial: Missing cached shader map for material Landscape_Material, compiling. 
+[2018.10.29-15.07.07:958][982]LogShaderCompilers: Display: Shaders left to compile 16
+[2018.10.29-15.07.07:958][982]LogShaderCompilers: Display: Shaders left to compile 15
+[2018.10.29-15.07.07:958][982]LogShaderCompilers: Display: Shaders left to compile 14
+[2018.10.29-15.07.07:958][982]LogShaderCompilers: Display: Shaders left to compile 13
+[2018.10.29-15.07.09:021][997]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.10.29-15.07.10:048][ 15]LogShaderCompilers: Display: Shaders left to compile 12
+[2018.10.29-15.07.10:110][ 17]LogShaderCompilers: Display: Shaders left to compile 11
+[2018.10.29-15.07.10:189][ 19]LogShaderCompilers: Display: Shaders left to compile 10
+[2018.10.29-15.07.10:311][ 22]LogShaderCompilers: Display: Shaders left to compile 9
+[2018.10.29-15.07.10:426][ 24]LogShaderCompilers: Display: Shaders left to compile 8
+[2018.10.29-15.07.10:446][ 24]LogShaderCompilers: Display: Shaders left to compile 7
+[2018.10.29-15.07.10:509][ 25]LogShaderCompilers: Display: Shaders left to compile 6
+[2018.10.29-15.07.10:887][ 29]LogShaderCompilers: Display: Shaders left to compile 5
+[2018.10.29-15.07.10:916][ 30]LogShaderCompilers: Display: Shaders left to compile 4
+[2018.10.29-15.07.11:109][ 35]LogShaderCompilers: Display: Shaders left to compile 3
+[2018.10.29-15.07.11:269][ 37]LogShaderCompilers: Display: Shaders left to compile 2
+[2018.10.29-15.07.11:357][ 39]LogShaderCompilers: Display: Shaders left to compile 1
+[2018.10.29-15.07.11:941][ 52]MaterialEditorStats: Base pass shader: 98 instructions
+[2018.10.29-15.07.11:941][ 52]MaterialEditorStats: Base pass shader with Volumetric Lightmap: 98 instructions
+[2018.10.29-15.07.11:941][ 52]MaterialEditorStats: Vertex shader: 34 instructions
+[2018.10.29-15.07.11:941][ 52]MaterialEditorStats: Texture samplers: 2/16
